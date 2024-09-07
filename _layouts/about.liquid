@@ -40,6 +40,14 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <!-- People -->
+    {% if page.profiles %}
+      <h2>
+        <a href="{{ '/people/' | relative_url }}" style="color: inherit">People</a>
+      </h2>
+      {% include profiles.liquid limit=false %}
+    {% endif %}
+
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>
