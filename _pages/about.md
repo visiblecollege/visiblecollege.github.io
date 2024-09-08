@@ -27,4 +27,4 @@ With that in mind, our primary mission is to produce, collaborate on, and share 
 
 In [The Invisible College](https://www.amazon.com/Invisible-College-Scientists-Discovered-Influence/dp/1938398270), by Jacques Vallee, we encountered the work of a cadre of researchers who were working in secrecy, or at least anonymity, to better understand the UFO phenomenon. 
 
-As the topic of UAP has gone increasingly mainstream in recent years, more and more academics and professionals have begun to feel comfortable taking the subject seriously and speaking publicly about it.
+As the topic of UAP has gone increasingly mainstream in recent years, more and more academics and professionals have begun to feel comfortable taking the subject seriously and speaking publicly about it -- "The Invisible College" is gradually becoming visible.
