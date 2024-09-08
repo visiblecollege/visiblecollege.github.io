@@ -1,6 +1,6 @@
 <div class="post">
   <article>
-      {% for profile in page.profiles %}
+      {% for profile in site.data.profiles %}
         <hr>
         <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
           {% if profile.image %}

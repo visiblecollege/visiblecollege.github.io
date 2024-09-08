@@ -1,39 +1,30 @@
 ---
 layout: about
-title: about
-permalink: /
-subtitle: 
+title: About
+description: 
+permalink: /about
+nav: true
+nav_order: 4
 
 profile:
   align: right
   image: invisible-college.png
   image_circular: false # crops the image to make it circular
-  more_info:
+  more_info: Image from <a href='https://en.wikipedia.org/wiki/Invisible_College'>Wikipedia</a>.
 
-profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
-  - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
-  - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
-news: false # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-We are a group of academics and professionals conducting and promoting serious research into Unidentified Anomalous Phenomena (UAP) and related topics.
+We are a volunteer group of academics and professionals conducting and promoting serious research into Unidentified Anomalous Phenomena (UAP) and related topics.
 
-Our work has been underway at various levels for some time now, but we have just begun to join forces and work together.
+#### Our **mission**
+
+We don't claim to have any particular authority on this subject matter, but believe progress can be made only if we work together to reduce the stigma traditionally associated with this subject and share all the good work happening across the community.
+
+With that in mind, our primary mission is to produce, collaborate on, and share high quality research and educational materials that we hope will enable other researchers, policymakers, and the public to better understand this complex subject.
+
+#### Our **name**
+
+In [The Invisible College](https://www.amazon.com/Invisible-College-Scientists-Discovered-Influence/dp/1938398270), by Jacques Vallee, we encountered the work of a cadre of researchers who were working in secrecy, or at least anonymity, to better understand the UFO phenomenon. 
+
+As the topic of UAP has gone increasingly mainstream in recent years, more and more academics and professionals have begun to feel comfortable taking the subject seriously and speaking publicly about it.
