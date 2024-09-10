@@ -33,8 +33,8 @@ layout: page
       <div class="post">
         <article>
           {% for profile in site.data.team %}
-            <hr>
-            <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
+            <hr/>
+            <div class="team profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
               {% if profile.image %}
                 {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
                 {% if profile.image_circular %}
@@ -51,9 +51,11 @@ layout: page
             </div>
 
             <div class="clearfix">
-              {% if profile.content %}
-                {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-                {{ profile_content | markdownify }}
+              <h5 style="margin-bottom: 0.1rem"><strong>{{ profile.name }}</strong></h5>
+              <h6 style="margin-bottom: 0.8rem">{{ profile.title }}</h6>
+              {% if profile.bio %}
+                {% capture bio_content %}{% include_relative {{ profile.bio }} %}{% endcapture %}
+                {{ bio_content | markdownify }}
               {% else %}
                 {{ content }}
               {% endif %}

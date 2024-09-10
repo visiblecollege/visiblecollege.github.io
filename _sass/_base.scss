@@ -218,7 +218,11 @@ ul.task-list input[type="checkbox"] {
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 12%;
+
+    &.team {
+      width: 25%;
+    }
 
     .address {
       p {
@@ -669,7 +673,7 @@ footer.sticky-bottom {
   }
 
   h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.2rem;
 
     span {
       font-size: 1.5rem;
@@ -679,15 +683,17 @@ footer.sticky-bottom {
   h2.bibliography {
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);
-    padding-top: 1rem;
-    margin-top: 2rem;
+    padding-top: 0.2rem;
+    margin-top: 1rem;
     text-align: right;
+    font-size: 1.3rem;
   }
 
   ol.bibliography {
     list-style: none;
     padding: 0;
     margin-top: 0;
+    margin-bottom: 0;
 
     li {
       margin-bottom: 1rem;
@@ -834,8 +840,8 @@ footer.sticky-bottom {
 }
 
 // Rouge Color Customization
-figure.highlight {
-  margin: 0 0 1rem;
+figure, figure.highlight {
+  margin: 0 0 0.2rem;
 }
 
 pre {
