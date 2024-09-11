@@ -218,10 +218,10 @@ ul.task-list input[type="checkbox"] {
 
 @media (min-width: 576px) {
   .profile {
-    width: 12%;
+    width: 25%;
 
-    &.team {
-      width: 25%;
+    &.small {
+      width: 12%;
     }
 
     .address {
