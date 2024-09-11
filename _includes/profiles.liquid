@@ -31,7 +31,7 @@
           {% endif %}
           <div style="display: flex">
             <div class="publications float-left">
-              {% bibliography --group_by none --query @*[author_id={{ profile.id }}]* %}
+              {% bibliography --group_by none --query @*[author_id~=\|{{ profile.id }}\|] %}
             </div>
           </div>
         </div>

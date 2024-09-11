@@ -6,6 +6,7 @@ permalink: /people/einstein
 
 profile:
     name: Albert Einstein
+    id: einstein
     align: left
     title: Professor, UVa
     image: prof_pic.jpg
