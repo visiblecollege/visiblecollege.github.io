@@ -1,14 +1,14 @@
-- name: Albert Einstein, Ph.D.
+- name: Albert Einstein
   title: Director
   image: prof_pic.jpg
   align: left
-  bio: bio/einstein.md
+  bio: people/bio/einstein.md
   image_circular: false # crops the image to make it circular
   more_info:
-- name: Albert Einstein, Ph.D.
+- name: Albert Einstein
   title: Associate Director
   image: prof_pic.jpg
-  bio: bio/einstein.md
+  bio: people/bio/einstein.md
   align: left
   image_circular: false # crops the image to make it circular
   more_info:
