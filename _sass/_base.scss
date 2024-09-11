@@ -224,8 +224,12 @@ ul.task-list input[type="checkbox"] {
   .profile {
     width: 25%;
 
-    &.small {
+    @at-root .home & {
       width: 12%;
+
+      &.feature {
+        width: 25%;
+      }
     }
 
     .address {
@@ -667,6 +671,10 @@ footer.sticky-bottom {
 
 .publications {
   margin-top: 2rem;
+
+  @at-root .profiles-include & {
+    margin-top: 0rem;
+  }
 
   h1 {
     color: var(--global-theme-color);

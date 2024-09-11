@@ -3,33 +3,29 @@ groups:
     label: Research Associates
     members:
     - name: Albert Einstein
+      id: einstein
       align: left
       title: Professor, UVa
       image: prof_pic.jpg
-      bio: bio/einstein.md
-      image_circular: false # crops the image to make it circular
-      more_info:
+      bio: people/bio/einstein_short.md
     - name: Albert Einstein
+      id: einstein
       align: left
       image: prof_pic.jpg
-      bio: bio/einstein.md
-      image_circular: false # crops the image to make it circular
-      more_info:
+      bio: people/bio/einstein.md
   - affiliates:
     label: Affiliates
     members:
     - name: Albert Einstein
+      id: einstein
       align: left
       image: prof_pic.jpg
-      bio: bio/einstein.md
-      image_circular: false # crops the image to make it circular
-      more_info:
+      bio: people/bio/einstein.md
   - public_figures:
     label: Public Figures
     members:
     - name: Albert Einstein
+      id: einstein
       align: left
       image: prof_pic.jpg
-      bio: bio/einstein.md
-      image_circular: false # crops the image to make it circular
-      more_info:
+      bio: people/bio/einstein.md
