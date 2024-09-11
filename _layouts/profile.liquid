@@ -34,7 +34,7 @@ layout: default
 
   <h2>References</h2>
   <div class="publications">
-    {% bibliography --group_by none --query @*[author_id={{ page.profile.id }}]* --sort_by year --order descending %}
+    {% bibliography --group_by none --query @*[author_id~=|{{ page.profile.id }}|]* --sort_by year --order descending %}
   </div>
 
   {% if site.giscus and page.giscus_comments %}
