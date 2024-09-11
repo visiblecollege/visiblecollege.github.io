@@ -19,6 +19,6 @@ We are a volunteer group of academics and professionals conducting and promoting
 
 Our work has been underway at various levels for some time now, but we have just begun to work together publicly.
 
-### Where to start
+#### Where to <strong>start</strong>
 
 If you are new to this subject, it can be quite difficult to determine what sources are credible and which aren't. We are working on an authoritative historical on-ramp for academics and other researchers, but in the meantime visit our [References](/references) page to get oriented.
