@@ -29,8 +29,10 @@
             {% capture profile_content %}{% include_relative {{ profile.bio }} %}{% endcapture %}
             {{ profile_content | markdownify }}
           {% endif %}
-          <div class="publications float-left">
-            {% bibliography --group_by none --query @*[author_id={{ profile.id }}]* %}
+          <div style="display: flex">
+            <div class="publications float-left">
+              {% bibliography --group_by none --query @*[author_id={{ profile.id }}]* %}
+            </div>
           </div>
         </div>
       {% endfor %}
