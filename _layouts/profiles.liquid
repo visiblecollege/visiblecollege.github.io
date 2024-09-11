@@ -5,7 +5,7 @@ layout: page
   <article>
     {% if site.data.profiles %}
       {% for profile_group in site.data.profiles.groups %}
-        <h3>{{ profile_group.label }}</h3>
+        <h3 class="profile-group">{{ profile_group.label }}</h3>
         {% for profile in profile_group.members %}
           <hr/>
           <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
@@ -26,9 +26,7 @@ layout: page
 
           <div class="clearfix">
             <h5 style="margin-bottom: 0.1rem"><strong>{{ profile.name }}</strong></h5>
-            {% if profile.title %}
-              <h6>{{ profile.title }}</h6>
-            {% endif  %}
+            <h6>{{ profile.title }}</h6>
             {% if profile.bio %}
               {% capture profile_content %}{% include_relative {{ profile.bio }} %}{% endcapture %}
               {{ profile_content | markdownify }}
