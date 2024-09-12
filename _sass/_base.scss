@@ -702,6 +702,11 @@ footer.sticky-bottom {
     font-size: 1.3rem;
   }
 
+  hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
   ol.bibliography {
     list-style: none;
     padding: 0;
@@ -849,6 +854,10 @@ footer.sticky-bottom {
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
     }
+  }
+
+  .comment {
+    font-size: 0.9rem;
   }
 }
 

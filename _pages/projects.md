@@ -2,15 +2,17 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+# description: Research and other educational projects of The Visible College
 nav: true
 nav_order: 3
-display_categories: [work, fun]
-horizontal: false
+horizontal: true
 ---
 
 <!-- pages/projects.md -->
 <div class="projects">
+
+A number of research projects and other educational activities are underway at The Visible College. Stay tuned for more information!
+
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
