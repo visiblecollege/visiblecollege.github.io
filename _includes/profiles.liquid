@@ -2,6 +2,7 @@
   {% if site.data.profiles %}
     {% for profile_group in site.data.profiles.groups %}
       <h3>{{ profile_group.label }}</h3>
+      {{ profile_group.summary }}
       {% for profile in profile_group.members %}
         <hr/>
         <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">

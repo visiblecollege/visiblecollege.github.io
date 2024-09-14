@@ -642,13 +642,25 @@ footer.sticky-bottom {
   }
 
   .card {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+
     img {
       width: 100%;
     }
   }
 
   .col {
-    padding-bottom: 1rem;
+    padding-left: 0;
+    padding-bottom: 0;
+
+    &.mb-4 {
+      margin-bottom: 0 !important;
+    }
+  }
+  .col-md-6 {
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 
   .grid-sizer,
@@ -664,6 +676,18 @@ footer.sticky-bottom {
     margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: right;
+  }
+}
+
+.project-thumbnail {
+  img {
+    size: 20%;
+  }
+}
+
+.profiles-include {
+  h3 {
+    margin-top: 1rem;
   }
 }
 

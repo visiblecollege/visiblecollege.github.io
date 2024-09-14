@@ -40,7 +40,7 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
-    {% include profiles.liquid limit=false %}
+    {% comment %} {% include profiles.liquid limit=false %} {% endcomment %}
 
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
