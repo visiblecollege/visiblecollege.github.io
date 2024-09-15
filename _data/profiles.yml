@@ -3,32 +3,41 @@ groups:
     label: Research Associates
     summary: Academics and professionals who are working or have worked on research projects or other initiatives of The Visible College.
     members:
-    - name: Albert Einstein
-      id: einstein
+    - name: Christian Peters, Ph.D.
+      id: christianpeters
       align: left
-      title: Professor, UVa
-      image: prof_pic.jpg
-      bio: people/bio/einstein_short.md
-    - name: Albert Einstein
-      id: einstein
+      title: Managing Director, Bremen International Graduate School of Social Sciences (BIGSSS), University of Bremen
+      image:
+      bio: people/bio/christianpeters.md
+    - name: Janis Whitlock, Ph.D., M.P.H.
+      id: janiswhitlock
       align: left
-      image: prof_pic.jpg
-      bio: people/bio/einstein.md
+      title: Research Scientist Emerita
+      image:
+      bio: people/bio/janiswhitlock.md
+    - name: John L. Roberts
+      id: johnlroberts
+      align: left
+      title: Associate Professor of Psychology, University of West Georgia
+      image: johnlroberts.jpg
+      bio: people/bio/johnlroberts.md
+    - name: Justin Sui, Ph.D.
+      id: justinsui
+      align: left
+      title:
+      image: justinsui.jpg
+      bio: people/bio/justinsui.md
   - affiliates:
     label: Affiliates
-    summary: Individuals who have contributed to the efforts of The Visible College in some form or another.
+    summary: Individuals who have contributed to the efforts of The Visible College in some form or another. Coming soon!
     members:
-    - name: Albert Einstein
-      id: einstein
-      align: left
-      image: prof_pic.jpg
-      bio: people/bio/einstein.md
   - public_figures:
     label: Public Figures
     summary: Scholars working publicly in UAP Studies or adjacent fields who are <b>not</b> associated with The Visible College, but whose work we consider integral to an understanding of the subject area as a whole.
     members:
-    - name: Albert Einstein
-      id: einstein
+    - name: Jacques Vallee, Ph.D.
+      id: jacquesvallee
+      title:  Computer scientist, venture capitalist, author, ufologist, and astronomer
       align: left
-      image: prof_pic.jpg
-      bio: people/bio/einstein.md
+      image: jacquesvallee.jpg
+      bio:

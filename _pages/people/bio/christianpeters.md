@@ -1,0 +1,1 @@
+Christian Peters holds a PhD in political science from TU Dresden and École Pratique des Hautes Études. His research and publications cover religion, politics, higher education, and UAPs. In 2023, he co-authored Scientific American's "It's Time to Hear from Social Scientists about UFOs."

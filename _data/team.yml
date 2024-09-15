@@ -1,14 +1,14 @@
-- name: Albert Einstein
+- name: Steven Brown, Ph.D.
   title: Director
-  image: prof_pic.jpg
+  image: stevenbrown.jpg
   align: left
   bio: people/bio/einstein.md
   image_circular: false # crops the image to make it circular
   more_info:
-- name: Albert Einstein
+- name: Jed Verity, Ph.D.
   title: Associate Director
-  image: prof_pic.jpg
-  bio: people/bio/einstein.md
+  image: jedverity.jpg
+  bio: people/bio/jedverity.md
   align: left
   image_circular: false # crops the image to make it circular
   more_info:

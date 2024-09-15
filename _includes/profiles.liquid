@@ -22,7 +22,15 @@
         </div>
 
         <div class="clearfix">
-          <h5 style="margin-bottom: 0.1rem"><strong><a href="/people{{ profile.id | relative_url }}">{{ profile.name }}</a></strong></h5>
+          <h5 style="margin-bottom: 0.1rem">
+            <strong>
+              {% if profile.profile_page %}
+                <a href="{{ profile.profile_page | relative_url }}">{{ profile.name }}</a>
+              {% else %}
+                {{ profile.name }}
+              {% endif %}
+            </strong>
+          </h5>
           {% if profile.title %}
             <h6>{{ profile.title }}</h6>
           {% endif  %}
@@ -32,7 +40,7 @@
           {% endif %}
           <div style="display: flex">
             <div class="publications float-left">
-              {% bibliography --group_by none --query @*[author_id~=\|{{ profile.id }}\|] %}
+              {% bibliography --sort_by year --order descending --group_by none --query @*[author_id~=\|{{ profile.id }}\|] %}
             </div>
           </div>
         </div>
