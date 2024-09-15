@@ -35,6 +35,12 @@ groups:
     label: Public Figures
     summary: Scholars working publicly in UAP Studies or adjacent fields who are <b>not</b> associated with The Visible College, but whose work we consider integral to an understanding of the subject area as a whole.
     members:
+    - name: Garry P. Nolan, Ph.D.
+      id: garrypnolan
+      title: Executive Director of the Board, <a href='https://thesolfoundation.org/'>Sol Foundation</a><br/>Professor in the Department of Pathology, <a href='https://med.stanford.edu/profiles/garry-nolan'>Stanford University School of Medicine</a>
+      align: left
+      image: garrypnolan.jpg
+      bio:
     - name: Jacques Vallee, Ph.D.
       id: jacquesvallee
       title:  Computer scientist, venture capitalist, author, ufologist, and astronomer

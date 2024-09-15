@@ -702,6 +702,7 @@ footer.sticky-bottom {
 
   @at-root .profiles-include & {
     margin-top: 0rem;
+    margin-left: 0.1rem;
     flex: 0 0 100%;
   }
 
@@ -881,6 +882,9 @@ footer.sticky-bottom {
     }
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
+    }
+    .col-sm-8 {
+      padding-left: 1px;
     }
   }
 

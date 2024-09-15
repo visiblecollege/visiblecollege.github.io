@@ -56,8 +56,6 @@ layout: page
               {% if profile.bio %}
                 {% capture bio_content %}{% include_relative {{ profile.bio }} %}{% endcapture %}
                 {{ bio_content | markdownify }}
-              {% else %}
-                {{ content }}
               {% endif %}
             </div>
           {% endfor %}
