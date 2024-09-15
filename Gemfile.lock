@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/glortho/jekyll-scholar.git
-  revision: f0d4d576c45871e851dd3af03ff2b342140bdd83
+  revision: 2c860ca59a55d4c5fd141b53002a452ffe9e6083
   specs:
     jekyll-scholar (7.1.3)
       bibtex-ruby (~> 6.0)
