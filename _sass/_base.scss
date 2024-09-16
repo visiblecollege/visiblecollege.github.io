@@ -717,6 +717,8 @@ footer.sticky-bottom {
     flex: 0 0 100%;
 
     @media (max-width: 576px) {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
       flex: 0 0 80%;
     }
   }
