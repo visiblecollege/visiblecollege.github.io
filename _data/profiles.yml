@@ -11,7 +11,7 @@ groups:
     - name: Janis Whitlock, Ph.D., M.P.H.
       id: janiswhitlock
       title: Research Scientist Emerita
-      image: bio-abstract.png
+      image: janiswhitlock.jpg
       bio: people/bio/janiswhitlock.md
     - name: John L. Roberts, Ph.D.
       id: johnlroberts
