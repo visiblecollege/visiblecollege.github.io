@@ -29,7 +29,7 @@ groups:
   #   members:
   - public_figures:
     label: Public Figures
-    summary: Scholars working publicly in UAP Studies or adjacent fields who are <b>not</b> associated with The Visible College, but whose work we consider integral to an understanding of the subject area as a whole.
+    summary: Scholars working publicly in UAP Studies or adjacent fields who are not directly associated with The Visible College, but whose work we consider integral to an understanding of the subject area as a whole.
     members:
     - name: Beatriz Villarroel, Ph.D.
       id: beatrizvillarroel
