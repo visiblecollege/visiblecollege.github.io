@@ -31,13 +31,17 @@ groups:
     label: Public Figures
     summary: Scholars working publicly in UAP Studies or adjacent fields who are <b>not</b> associated with The Visible College, but whose work we consider integral to an understanding of the subject area as a whole.
     members:
+    - name: Beatriz Villarroel, Ph.D.
+      id: beatrizvillarroel
+      title: Astronomy Researcher at the Nordic Institute for Theoretical Physics
+      image: beatrizvillarroel.jpg
     - name: Garry P. Nolan, Ph.D.
       id: garrypnolan
       title: Executive Director of the Board, <a href='https://thesolfoundation.org/'>Sol Foundation</a><br/>Professor in the Department of Pathology, <a href='https://med.stanford.edu/profiles/garry-nolan'>Stanford University School of Medicine</a>
       image: garrypnolan.jpg
     - name: J. Allen Hynek, Ph.D.
       id: jallenhynek
-      title: Astronomer
+      title: Astronomer, Scientific Advisor to the US Air Force - Project Sign, Project Grudge, and Project Blue Book
       image: jallenhynek.jpg
     - name: James E. McDonald, Ph.D.
       id: jamesemcdonald
