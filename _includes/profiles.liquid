@@ -39,7 +39,7 @@
             {% capture profile_content %}{% include_relative {{ profile.bio }} %}{% endcapture %}
             {{ profile_content | markdownify }}
           {% endif %}
-          <div style="display: flex">
+          <div class="publications-container">
             <div class="publications float-left">
               {% bibliography --sort_by year --order descending --group_by none --query @*[author_id~=\|{{ profile.id }}\|] %}
             </div>

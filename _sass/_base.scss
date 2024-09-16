@@ -693,9 +693,20 @@ footer.sticky-bottom {
   h6 {
     margin-bottom: 0.8rem;
   }
+
 }
 
 // Publications
+
+.publications-container {
+  display: flex;
+
+
+  @media (max-width: 576px) {
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .publications {
   margin-top: 2rem;
@@ -704,6 +715,10 @@ footer.sticky-bottom {
     margin-top: 0rem;
     margin-left: 0.1rem;
     flex: 0 0 100%;
+
+    @media (max-width: 576px) {
+      flex: 0 0 80%;
+    }
   }
 
   h1 {
