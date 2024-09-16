@@ -1,11 +1,12 @@
 <article class="profiles-include">
   {% if site.data.profiles %}
     {% for profile_group in site.data.profiles.groups %}
-      <h3>{{ profile_group.label }}</h3>
+      {% assign group_slug = profile_group.label | downcase | replace: " ", "-" %}
+      <a name="{{ group_slug }}"><h3>{{ profile_group.label }}</h3></a>
       {{ profile_group.summary }}
       {% for profile in profile_group.members %}
         <hr/>
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
+        <div class="profile float-{% if profile.align == 'right' %}right{% else %}left{% endif %}">
           {% if profile.image %}
             {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
             {% if profile.image_circular %}

@@ -6,9 +6,9 @@ subtitle:
 
 profile:
   align: right
-  image: invisible-college.png
+  image: navy-1952.jpg
   image_circular: false # crops the image to make it circular
-  more_info:
+  more_info: Photo by Shell R. Alpert (1952) via <i>U-2s, UFOs, and Project Blue Book</i> &middot; <a href='https://www.history.navy.mil/browse-by-topic/disasters-and-phenomena/u2s-ufos-and-operation-blue-book.html'>www.history.navy.mil</a>
 
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"

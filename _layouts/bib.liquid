@@ -159,6 +159,8 @@
     {% endif %}
     {% if entry.publisher %}
       {% capture publisher %}{{ " (" }}{{ entry.publisher }}{{ ")" }}{% endcapture %}
+    {% else %}
+      {% capture publisher %}{{ "" }}{% endcapture %}
     {% endif %}
     {% if entry.month %}
       {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}

@@ -5,45 +5,41 @@ groups:
     members:
     - name: Christian Peters, Ph.D.
       id: christianpeters
-      align: left
       title: Managing Director, Bremen International Graduate School of Social Sciences (BIGSSS), University of Bremen
-      image:
+      image: bio-abstract.png
       bio: people/bio/christianpeters.md
     - name: Janis Whitlock, Ph.D., M.P.H.
       id: janiswhitlock
-      align: left
       title: Research Scientist Emerita
-      image:
+      image: bio-abstract.png
       bio: people/bio/janiswhitlock.md
     - name: John L. Roberts
       id: johnlroberts
-      align: left
       title: Associate Professor of Psychology, University of West Georgia
       image: johnlroberts.jpg
       bio: people/bio/johnlroberts.md
     - name: Justin Sui, Ph.D.
       id: justinsui
-      align: left
       title:
       image: justinsui.jpg
       bio: people/bio/justinsui.md
-  - affiliates:
-    label: Affiliates
-    summary: Individuals who have contributed to the efforts of The Visible College in some form or another. Coming soon!
-    members:
+  # - affiliates:
+  #   label: Affiliates
+  #   summary: Individuals who have contributed to the efforts of The Visible College in some form or another. Coming soon!
+  #   members:
   - public_figures:
     label: Public Figures
     summary: Scholars working publicly in UAP Studies or adjacent fields who are <b>not</b> associated with The Visible College, but whose work we consider integral to an understanding of the subject area as a whole.
     members:
+    - name: James E. McDonald, Ph.D.
+      id: jamesemcdonald
+      title: Physicist, Professor of Atmospheric Sciences
+      image: jamesemcdonald.gif
     - name: Garry P. Nolan, Ph.D.
       id: garrypnolan
       title: Executive Director of the Board, <a href='https://thesolfoundation.org/'>Sol Foundation</a><br/>Professor in the Department of Pathology, <a href='https://med.stanford.edu/profiles/garry-nolan'>Stanford University School of Medicine</a>
-      align: left
       image: garrypnolan.jpg
-      bio:
     - name: Jacques Vallee, Ph.D.
       id: jacquesvallee
       title:  Computer scientist, venture capitalist, author, ufologist, and astronomer
-      align: left
       image: jacquesvallee.jpg
-      bio:
