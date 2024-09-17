@@ -46,14 +46,14 @@ groups:
       id: jallenhynek
       title: Astronomer, Scientific Advisor to the US Air Force - Project Sign, Project Grudge, and Project Blue Book
       image: jallenhynek.jpg
-    - name: James E. McDonald, Ph.D.
-      id: jamesemcdonald
-      title: Physicist, Professor of Atmospheric Sciences
-      image: jamesemcdonald.gif
     - name: Jacques Vallee, Ph.D.
       id: jacquesvallee
       title:  Computer scientist, venture capitalist, author, ufologist, and astronomer
       image: jacquesvallee.jpg
+    - name: James E. McDonald, Ph.D.
+      id: jamesemcdonald
+      title: Physicist, Professor of Atmospheric Sciences
+      image: jamesemcdonald.gif
     # - name: Richard M. Dolan, M.A.
     #   id: richardmdolan
     #   title: Researcher, historian, and writer
