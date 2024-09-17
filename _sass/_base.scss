@@ -654,6 +654,11 @@ footer.sticky-bottom {
     }
   }
 
+  .card-text {
+    color: var(--global-text-color) !important;
+    font-weight: 300 !important;
+  }
+
   .col {
     padding-left: 0;
     padding-bottom: 0;
