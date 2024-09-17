@@ -2,7 +2,7 @@
   title: Director
   image: stevenbrown.jpg
   align: left
-  bio:
+  bio: people/bio/stevenbrown.md
   image_circular: false # crops the image to make it circular
   more_info:
 - name: Jed Verity, Ph.D.

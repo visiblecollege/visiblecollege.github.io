@@ -23,6 +23,11 @@ groups:
       title:
       image: justinsui.jpg
       bio: people/bio/justinsui.md
+    - name: Steven Brown, Ph.D.
+      id: stevenbrown
+      title: Associate Professor of Teaching Philosophy, The Ohio State University
+      image: stevenbrown.jpg
+      bio: people/bio/stevenbrown_research.md
   # - affiliates:
   #   label: Affiliates
   #   summary: Individuals who have contributed to the efforts of The Visible College in some form or another. Coming soon!
