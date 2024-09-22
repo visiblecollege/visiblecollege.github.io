@@ -63,6 +63,10 @@ groups:
       id: jamesemcdonald
       title: Physicist, Professor of Atmospheric Sciences
       image: jamesemcdonald.gif
+    - name: Michio Kaku, Ph.D.
+      id: michiokaku
+      title: Theoretical Physicist
+      image: michiokaku.jpg
     # - name: Richard M. Dolan, M.A.
     #   id: richardmdolan
     #   title: Researcher, historian, and writer
