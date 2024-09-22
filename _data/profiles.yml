@@ -43,6 +43,10 @@ groups:
     # - name: Diana Walsh Pasulka, Ph.D.
     #   id: dianawalshpasulka
     #   title: Vk
+    - name: Diana Walsh Pasulka, Ph.D.
+      id: dianawalshpasulka
+      title: Professor of Religious Studies, University of North Carolina, Wilmington
+      image: dianawalshpasulka.jpg
     - name: Garry P. Nolan, Ph.D.
       id: garrypnolan
       title: Executive Director of the Board, <a href='https://thesolfoundation.org/'>Sol Foundation</a><br/>Professor in the Department of Pathology, <a href='https://med.stanford.edu/profiles/garry-nolan'>Stanford University School of Medicine</a>
