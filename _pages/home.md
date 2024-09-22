@@ -29,7 +29,7 @@ Visit the **[About](/about)** page for more.
 
 #### Our **projects**
 
-The Visible College is leading and contributing to a variety of research projects and educational events across across the global academic community. We will share more details in months to come, but some basic outlines of current work in progress can be found on our **[Projects](/projects)** page.
+The Visible College is leading and contributing to a variety of research projects and educational events across the global academic community. We will share more details in months to come, but some basic outlines of current work in progress can be found on our **[Projects](/projects)** page.
 
 #### Our **people**
 
