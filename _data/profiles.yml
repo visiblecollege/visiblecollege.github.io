@@ -36,6 +36,10 @@ groups:
     label: Public Figures
     summary: Scholars working publicly in UAP Studies or adjacent fields who are not directly associated with The Visible College, but whose work we consider integral to an understanding of the subject area as a whole.
     members:
+    - name: Avi Loeb, Ph.D.
+      id: aviloeb
+      title: Frank B. Baird Jr. Professor of Science, Harvard University
+      image: aviloeb.jpg
     - name: Beatriz Villarroel, Ph.D.
       id: beatrizvillarroel
       title: Astronomy Researcher at the Nordic Institute for Theoretical Physics
