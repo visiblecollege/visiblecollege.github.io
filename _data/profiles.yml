@@ -13,6 +13,10 @@ groups:
       title: Research Scientist Emerita
       image: janiswhitlock.jpg
       bio: people/bio/janiswhitlock.md
+    - name: Jed Verity, Ph.D.
+      title: Ph.D. in Tibetan Buddhism
+      image: jedverity.jpg
+      bio: people/bio/jedverity_research.md
     - name: John L. Roberts, Ph.D.
       id: johnlroberts
       title: Associate Professor of Psychology, University of West Georgia
