@@ -32,6 +32,10 @@ groups:
       title: Associate Professor of Teaching Philosophy, The Ohio State University
       image: stevenbrown.jpg
       bio: people/bio/stevenbrown_research.md
+    - name: Tania Searle, Ph.D.
+      id: taniasearle
+      image: taniasearle.jpg
+      bio: people/bio/taniasearle.md
   # - affiliates:
   #   label: Affiliates
   #   summary: Individuals who have contributed to the efforts of The Visible College in some form or another. Coming soon!
