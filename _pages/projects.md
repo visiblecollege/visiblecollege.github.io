@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 # description: Research and other educational projects of The Visible College
 nav: true
-nav_order: 3
+nav_order: 4
 horizontal: true
 ---
 
