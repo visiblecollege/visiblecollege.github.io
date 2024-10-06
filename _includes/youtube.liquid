@@ -1,0 +1,7 @@
+{% assign video_id = include.url | split: '/' | last | split: '?' | first %}
+{% if video_id contains 'youtu.be' %}
+  {% assign video_id = include.url | split: '/' | last %}
+{% elsif include.url contains 'watch?v=' %}
+  {% assign video_id = include.url | split: 'v=' | last | split: '&' | first %}
+{% endif %}
+<iframe width="{{ include.width | default: '560' }}" height="{{ include.height | default: '315' }}" src="https://www.youtube.com/embed/{{ video_id }}" frameborder="0" allowfullscreen></iframe>
