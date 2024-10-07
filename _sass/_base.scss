@@ -1230,6 +1230,12 @@ ninja-keys::part(ninja-input-wrapper) {
   background: var(--global-bg-color);
 }
 
+.news {
+  th {
+    padding-left: 0;
+  }
+}
+
 .news-title {
   font-size: 1.1rem;
   font-weight: 500;
