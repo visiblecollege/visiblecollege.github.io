@@ -37,7 +37,7 @@ table {
 }
 
 strong a {
-  color: var(--global-warning-block);
+  color: var(--global-theme-color);
 }
 
 a,
@@ -985,6 +985,9 @@ html.transition *:after {
         color: var(--global-theme-color);
       }
     }
+  }
+  h3, h4 {
+    margin-bottom: 1rem;
   }
 }
 
