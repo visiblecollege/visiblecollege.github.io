@@ -44,6 +44,10 @@ groups:
     label: Public Figures
     summary: Scholars working publicly in UAP Studies or adjacent fields who are not directly associated with The Visible College, but whose work we consider integral to an understanding of the subject area as a whole.
     members:
+    - name: Alexander Wendt, Ph.D.
+      id: alexanderwendt
+      title: Mershon Professor of International Security and Professor of Political Science, Ohio State
+      image: alexanderwendt.jpg
     - name: Avi Loeb, Ph.D.
       id: aviloeb
       title: Frank B. Baird Jr. Professor of Science, Harvard University
