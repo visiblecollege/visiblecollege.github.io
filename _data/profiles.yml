@@ -52,9 +52,10 @@ groups:
       id: beatrizvillarroel
       title: Astronomy Researcher at the Nordic Institute for Theoretical Physics
       image: beatrizvillarroel.jpg
-    # - name: Diana Walsh Pasulka, Ph.D.
-    #   id: dianawalshpasulka
-    #   title: Vk
+    - name: Christopher "Kit" Green, M.D., Ph.D.
+      title: Professor in Forensic Neuroimaging, Department of Psychiatry and Behavioral Neurosciences, Wayne State University Medical School and Detroit Medical Center<br/>Former Senior Division Analyst for Neurosciences, Central Intelligence Agency (CIA)
+      id: christophergreen
+      image: christophergreen.jpg
     - name: Diana Walsh Pasulka, Ph.D.
       id: dianawalshpasulka
       title: Professor of Religious Studies, University of North Carolina, Wilmington
@@ -75,10 +76,24 @@ groups:
       id: jamesemcdonald
       title: Physicist, Professor of Atmospheric Sciences
       image: jamesemcdonald.gif
+    - name: Kevin Knuth, Ph.D.
+      id: kevinknuth
+      title: Professor of Physics, University at Albany
+      image: kevinknuth.jpg
     - name: Michio Kaku, Ph.D.
       id: michiokaku
       title: Theoretical Physicist
       image: michiokaku.jpg
+    - name: Stephen Finley, Ph.D.
+      id: stephenfinley
+      title: Chair of African and African American Studies, Louisiana State University
+      image: stephenfinley.jpg
+    - name: Timothy Gallaudet, Ph.D.
+      id: timothygallaudet
+      title: Former Rear Admiral, U.S. Navy<br/>Former Administrator, National Ocean and Atmospheric Administration (NOAA)
+      image: timothygallaudet.jpg
+
+
     # - name: Richard M. Dolan, M.A.
     #   id: richardmdolan
     #   title: Researcher, historian, and writer
