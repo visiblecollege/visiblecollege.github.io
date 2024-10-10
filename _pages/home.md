@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: Photo by US Coast Guard photographer Shell R. Alpert (1952), via <i>U-2s, UFOs, and Project Blue Book</i> &middot; <a href='https://www.history.navy.mil/browse-by-topic/disasters-and-phenomena/u2s-ufos-and-operation-blue-book.html'>www.history.navy.mil</a>
 
-news: false # includes a list of news items
+news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
@@ -27,10 +27,10 @@ We do not advocate for any particular conclusions, nor do we make any claims to 
 
 Visit the **[About](/about)** page for more.
 
-#### Our **projects**
+<!-- #### Our **projects**
 
 The Visible College is leading and contributing to a variety of research projects and educational events across the global academic community. We will share more details in months to come, but some basic outlines of current work in progress can be found on our **[Projects](/projects)** page.
 
 #### Our **people**
 
-We are compiling a list of scholars and other subject matter experts (including but not limited to members of The Visible College) doing serious work in UAP studies and adjacent fields. Visit the **[People](/people)** page for more information.
+We are compiling a list of scholars and other subject matter experts (including but not limited to members of The Visible College) doing serious work in UAP studies and adjacent fields. Visit the **[People](/people)** page for more information. -->

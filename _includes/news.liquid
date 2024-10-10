@@ -16,12 +16,15 @@
         {% endif %}
         {% for item in news limit: news_limit %}
           <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
-            <td>
+            <th scope="row" style="width: 20%">
+              <img src="{{ item.thumbnail_url | prepend: 'assets/img/' }}" alt="Thumbnail" style="width: 100%; height: auto;">
+            </th>
+            <td class="news-list-item">
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                <p><a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a></p>
+                <p>{{ item.summary }}</p>
               {% endif %}
             </td>
           </tr>
