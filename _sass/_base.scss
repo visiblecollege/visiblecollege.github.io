@@ -1246,6 +1246,23 @@ ninja-keys::part(ninja-input-wrapper) {
   background: var(--global-bg-color);
 }
 
+.news {
+  th {
+    padding-left: 0;
+  }
+}
+
+.news-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.news-list-item {
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
 // newsletter
 .newsletter-form-container {
   margin-bottom: 20px;
