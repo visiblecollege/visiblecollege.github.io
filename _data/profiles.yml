@@ -1,6 +1,5 @@
 groups:
-  - research_associates:
-    label: Research Associates
+  - label: Research Associates
     summary: Academics and professionals who are working or have worked on research projects or other initiatives of The Visible College.
     members:
       - name: Christian Peters, Ph.D.
@@ -36,8 +35,7 @@ groups:
         id: taniasearle
         image: taniasearle.jpg
         bio: people/bio/taniasearle.md
-  - public_figures:
-    label: Public Figures
+  - label: Public Figures
     summary: Scholars working publicly in UAP Studies or adjacent fields who are not directly associated with The Visible College, but whose work we consider integral to an understanding of the subject area as a whole.
     members:
       - name: Alexander Wendt, Ph.D.
