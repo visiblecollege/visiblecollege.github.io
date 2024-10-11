@@ -12,8 +12,11 @@ const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process
 
 const peopleTableId = process.env.AIRTABLE_PEOPLE_TABLE_ID;
 const peopleFieldsToFetch = ['Name', 'id', 'Website Category', 'Team?', 'Photo', 'Team Bio', 'Research Bio', 'Website Title'];
+const peopleFilter = "AND(OR({Website Category} = 'Public Figure', {Website Category} = 'Research Associate'), {publish?} = TRUE())";
+
 const resourcesTableId = process.env.AIRTABLE_RESOURCES_TABLE_ID;
 const resourcesFieldsToFetch = ['id', 'website', 'author_name', 'author_id', 'type', 'abbr', 'thumbnail', 'title', 'publisher', 'year', 'video', 'doi', 'tags', 'pdf', 'abstract', 'note'];
+const resourcesFilter = "{publish?} = TRUE()";
 
 // Function to fetch specific fields from a table
 async function fetchFieldsFromTable(tableId, fields, formula = '') {
@@ -128,7 +131,7 @@ async function generateProfilesYaml(data) {
   }
 }
 
-const getPeople = () => fetchFieldsFromTable(peopleTableId, peopleFieldsToFetch, "NOT({Website Category} = '')")
+const getPeople = () => fetchFieldsFromTable(peopleTableId, peopleFieldsToFetch, peopleFilter)
   .then(data => {
     console.log(data);
     return Promise.all(data.map(async (item) => {
@@ -146,7 +149,7 @@ const getPeople = () => fetchFieldsFromTable(peopleTableId, peopleFieldsToFetch,
   });
 
 
-const getResources = () => fetchFieldsFromTable(resourcesTableId, resourcesFieldsToFetch)
+const getResources = () => fetchFieldsFromTable(resourcesTableId, resourcesFieldsToFetch, resourcesFilter)
   .then(async data => {
     console.log('Fetched resources data:', data, null, 2);
 
