@@ -1,19 +1,19 @@
 require('dotenv').config();
 
+const path = require('path');
 const Airtable = require('airtable');
 const fs = require('fs');
 const fsPromises = require('fs').promises;
 const axios = require('axios');
-const path = require('path');
 const yaml = require('js-yaml');
 
 // Configure Airtable
-const base = new Airtable({
-    apiKey: process.env.AIRTABLE_API_KEY
-}).base(process.env.AIRTABLE_BASE_ID);
+const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE_ID);
 
-const tableId = process.env.AIRTABLE_TABLE_ID;
-const fieldsToFetch = ['Name', 'id', 'Website Category', 'Team?', 'Photo', 'Team Bio', 'Research Bio', 'Website Title'];
+const peopleTableId = process.env.AIRTABLE_PEOPLE_TABLE_ID;
+const peopleFieldsToFetch = ['Name', 'id', 'Website Category', 'Team?', 'Photo', 'Team Bio', 'Research Bio', 'Website Title'];
+const resourcesTableId = process.env.AIRTABLE_RESOURCES_TABLE_ID;
+const resourcesFieldsToFetch = ['id', 'website', 'author_name', 'author_id', 'type', 'abbr', 'thumbnail', 'title', 'publisher', 'year', 'video', 'doi', 'tags', 'pdf', 'abstract', 'note'];
 
 // Function to fetch specific fields from a table
 async function fetchFieldsFromTable(tableId, fields) {
@@ -37,31 +37,25 @@ async function fetchFieldsFromTable(tableId, fields) {
   }
 }
 
+async function downloadAndSaveFile(url, outputPath) {
+  try {
+    const response = await axios({
+      method: 'GET',
+      url: url,
+      responseType: 'stream'
+    });
 
-async function downloadAndSavePhoto(photoData) {
-    if (photoData && photoData.length > 0) {
-        const photo = photoData[0];
-        const url = photo.url;
-        const filename = photo.filename;
+    const writer = fs.createWriteStream(outputPath);
+    response.data.pipe(writer);
 
-        try {
-            const response = await axios({
-                method: 'GET',
-                url: url,
-                responseType: 'stream'
-            });
-
-            const writer = fs.createWriteStream(path.join(__dirname, filename));
-            response.data.pipe(writer);
-
-            return new Promise((resolve, reject) => {
-                writer.on('finish', resolve);
-                writer.on('error', reject);
-            });
-        } catch (error) {
-            console.error('Error downloading photo:', error);
-        }
-    }
+    return new Promise((resolve, reject) => {
+      writer.on('finish', resolve);
+      writer.on('error', reject);
+    });
+  } catch (error) {
+    console.error('Error downloading file:', error);
+    throw error;
+  }
 }
 
 async function generateProfilesYaml(data) {
@@ -90,11 +84,12 @@ async function generateProfilesYaml(data) {
       const newPath = path.join(__dirname, 'assets', 'img', item.Photo[0].filename);
 
       try {
+        await downloadAndSaveFile(item.Photo[0].url, oldPath);
         await fsPromises.copyFile(oldPath, newPath);
         await fsPromises.rm(oldPath);
-        console.log(`Moved photo: ${item.Photo[0].filename} from ${oldPath} to ${newPath}`);
+        console.log(`Downloaded and moved photo: ${item.Photo[0].filename} to ${newPath}`);
       } catch (error) {
-        console.error(`Error moving photo ${item.Photo[0].filename}:`, error);
+        console.error(`Error processing photo ${item.Photo[0].filename}:`, error);
       }
     }
     const member = {
@@ -139,20 +134,89 @@ async function generateProfilesYaml(data) {
 }
 
 // Modify the existing code to call the new function
-fetchFieldsFromTable(tableId, fieldsToFetch)
-  .then(data => {
-    console.log(data);
-    return Promise.all(data.map(async (item) => {
-      if (item.Photo) {
-        await downloadAndSavePhoto(item.Photo);
-        console.log(`Downloaded and saved: ${item.Photo[0].filename}`);
+// fetchFieldsFromTable(peopleTableId, peopleFieldsToFetch)
+//   .then(data => {
+//     console.log(data);
+//     return Promise.all(data.map(async (item) => {
+//       if (item.Photo) {
+//         await downloadAndSaveFile(item.Photo[0].url, path.join(__dirname, item.Photo[0].filename));
+//         console.log(`Downloaded and saved: ${item.Photo[0].filename}`);
+//       }
+//     })).then(() => generateProfilesYaml(data));
+//   })
+//   .then(() => {
+//     console.log('Process completed successfully');
+//   })
+//   .catch(error => {
+//     console.error('Failed to process data:', error);
+//   });
+
+
+fetchFieldsFromTable(resourcesTableId, resourcesFieldsToFetch)
+  .then(async data => {
+    console.log('Fetched resources data:', JSON.stringify(data, null, 2));
+
+    // Process the data
+    const processedData = data.map(item => ({
+      id: item.id,
+      author: item.author_name ? item.author_name.join(' and ') : undefined,
+      author_id: item.author_id ? `|${item.author_id.join('|')}|` : undefined,
+      title: item.title,
+      year: item.year,
+      journal: item.journal,
+      volume: item.volume,
+      number: item.number,
+      pages: item.pages,
+      publisher: item.publisher,
+      doi: item.doi,
+      url: item.url,
+      tags: item.tags ? `|${item.tags.join('|')}|` : undefined,
+      preview: item.thumbnail ? `${item.id}${path.extname(item.thumbnail[0].filename)}` : undefined, // Convert thumbnail to preview with correct file extension
+    }));
+
+    // Download and save thumbnails
+    await Promise.all(processedData.map(async (item) => {
+      if (item.preview) {
+        const thumbnailUrl = data.find(d => d.id === item.id).thumbnail[0].url;
+        const thumbnailPath = path.join(__dirname, 'assets', 'img', 'publication_preview', `${item.id}.jpg`);
+
+        try {
+          await downloadAndSaveFile(thumbnailUrl, thumbnailPath);
+          console.log(`Downloaded and saved thumbnail: ${item.id}.jpg`);
+        } catch (error) {
+          console.error(`Error downloading thumbnail for ${item.id}:`, error);
+        }
       }
-    })).then(() => generateProfilesYaml(data));
-  })
-  .then(() => {
-    console.log('Process completed successfully');
+    }));
+
+    // Generate BibTeX entries
+    const bibEntries = processedData.map(item => {
+      let entry = `@${item.type}{${item.id},\n`;
+      if (item.author) entry += `  author = {${item.author}},\n`;
+      if (item.author_id) entry += `  author_id = {${item.author_id}},\n`;
+      entry += `  title = {${item.title}},\n`;
+      entry += `  year = {${item.year}},\n`;
+      if (item.journal) entry += `  journal = {${item.journal}},\n`;
+      if (item.volume) entry += `  volume = {${item.volume}},\n`;
+      if (item.number) entry += `  number = {${item.number}},\n`;
+      if (item.pages) entry += `  pages = {${item.pages}},\n`;
+      if (item.publisher) entry += `  publisher = {${item.publisher}},\n`;
+      if (item.doi) entry += `  doi = {${item.doi}},\n`;
+      if (item.url) entry += `  url = {${item.url}},\n`;
+      if (item.preview) entry += `  preview = {${item.preview}},\n`;
+      if (item.tags) entry += `  tags = {${item.tags}},\n`;
+      entry += `}\n\n`;
+      return entry;
+    }).join('');
+
+    // Write to papers.bib
+    try {
+      await fsPromises.writeFile(path.join(__dirname, '_bibliography', 'papers.bib'), bibEntries, 'utf8');
+      console.log('Generated papers.bib successfully');
+    } catch (error) {
+      console.error('Error writing papers.bib:', error);
+    }
   })
   .catch(error => {
-    console.error('Failed to process data:', error);
+    console.error('Error fetching data from Airtable:', error);
   });
-
