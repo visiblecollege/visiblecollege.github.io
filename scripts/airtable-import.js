@@ -11,7 +11,7 @@ const yaml = require('js-yaml');
 const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE_ID);
 
 const peopleTableId = process.env.AIRTABLE_PEOPLE_TABLE_ID;
-const peopleFieldsToFetch = ['Name', 'id', 'Website Category', 'Team?', 'Photo', 'Team Bio', 'Research Bio', 'Website Title'];
+const peopleFieldsToFetch = ['Name', 'id', 'Website Category', 'Photo', 'Research Bio', 'Website Title'];
 const peopleFilter = "AND(OR({Website Category} = 'Public Figure', {Website Category} = 'Research Associate'), {publish?} = TRUE())";
 
 const resourcesTableId = process.env.AIRTABLE_RESOURCES_TABLE_ID;
