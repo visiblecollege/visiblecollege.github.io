@@ -26,6 +26,11 @@ groups:
         id: justinsui
         image: justinsui.jpg
         bio: people/bio/justinsui.md
+      - name: Kharisma Montes de Oca⁩, M.S.
+        id: kharismamontesdeoca
+        title: Juris Doctorate 2025 Candidate, Urban Planner, Policy Writer & Project Manager
+        image: kharisma.jpeg
+        bio: people/bio/kharismamontesdeoca.md
       - name: Steven Brown, Ph.D.
         id: stevenbrown
         title: Associate Professor of Teaching Philosophy, The Ohio State University
