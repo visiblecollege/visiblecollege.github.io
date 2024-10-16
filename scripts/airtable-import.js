@@ -74,44 +74,47 @@ async function generateProfilesYaml(data) {
     ]
   };
 
+  const photoDownloadPromises = [];
+  const bioWritePromises = [];
+  const memberProcessingPromises = [];
+
   for (const item of data) {
-    if (item.Photo && item.Photo.length > 0) {
-      const oldPath = path.join(__dirname, item.Photo[0].filename);
-      const newPath = path.join(__dirname, '..', 'assets', 'img', item.Photo[0].filename);
+    memberProcessingPromises.push((async () => {
+      const member = {
+        name: item.Name,
+        id: item.id,
+        title: item['Website Title'],
+        image: item.Photo ? `${item.id}${path.extname(item.Photo[0].filename)}` : undefined
+      };
 
-      try {
-        await downloadAndSaveFile(item.Photo[0].url, oldPath);
-        await fsPromises.copyFile(oldPath, newPath);
-        await fsPromises.rm(oldPath);
-        console.log(`Downloaded and moved photo: ${item.Photo[0].filename} to ${newPath}`);
-      } catch (error) {
-        console.error(`Error processing photo ${item.Photo[0].filename}:`, error);
+      if (item.Photo && item.Photo.length > 0) {
+        const extension = path.extname(item.Photo[0].filename) || '.jpg';
+        const newPath = path.join(__dirname, '..', 'assets', 'img', `${item.id}${extension}`);
+
+        photoDownloadPromises.push(
+          downloadAndSaveFile(item.Photo[0].url, newPath)
+            .then(() => console.log(`Downloaded and moved photo: ${item.Photo[0].filename} to ${newPath}`))
+            .catch(error => console.error(`Error processing photo ${item.Photo[0].filename}:`, error))
+        );
       }
-    }
-    const member = {
-      name: item.Name,
-      id: item.id,
-      title: item['Website Title'],
-      image: item.Photo ? item.Photo[0].filename : ''
-    };
 
-    // Add bio field only for research associates
-    if (item['Website Category']?.toLowerCase()?.includes('research associate')) {
-      member.bio = `people/bio/${item.id}.md`;
-      profiles.groups[0].members.push(member);
+      if (item['Website Category']?.toLowerCase()?.includes('research associate')) {
+        member.bio = `people/bio/${item.id}.md`;
+        profiles.groups[0].members.push(member);
 
-      // Write Research Bio to markdown file
-      try {
         const bioPath = path.join(__dirname, '..', '_pages', 'people', 'bio', `${item.id}.md`);
-        await fsPromises.writeFile(bioPath, item['Research Bio'] || '', 'utf8');
-        console.log(`Created bio file for ${item.Name} at ${bioPath}`);
-      } catch (error) {
-        console.error(`Error writing bio file for ${item.Name}:`, error);
+        bioWritePromises.push(
+          fsPromises.writeFile(bioPath, item['Research Bio'] || '', 'utf8')
+            .then(() => console.log(`Created bio file for ${item.Name} at ${bioPath}`))
+            .catch(error => console.error(`Error writing bio file for ${item.Name}:`, error))
+        );
+      } else if (item['Website Category']?.toLowerCase()?.includes('public figure')) {
+        profiles.groups[1].members.push(member);
       }
-    } else if (item['Website Category']?.toLowerCase()?.includes('public figure')) {
-      profiles.groups[1].members.push(member);
-    }
+    })());
   }
+
+  await Promise.all(memberProcessingPromises);
 
   // Sort members by first name
   profiles.groups.forEach(group => {
@@ -120,24 +123,20 @@ async function generateProfilesYaml(data) {
 
   const yamlStr = yaml.dump(profiles, { lineWidth: -1 });
 
-  try {
-    await fsPromises.writeFile(path.join(__dirname, '..','_data', 'profiles.yml'), yamlStr, 'utf8');
-    console.log('Generated profiles.yml successfully');
-  } catch (error) {
-    console.error('Error writing profiles.yml:', error);
-  }
+  const yamlWritePromise = fsPromises.writeFile(path.join(__dirname, '..','_data', 'profiles.yml'), yamlStr, 'utf8')
+    .then(() => console.log('Generated profiles.yml successfully'))
+    .catch(error => console.error('Error writing profiles.yml:', error));
+
+  // Wait for all parallel operations to complete
+  await Promise.all([
+    ...photoDownloadPromises,
+    ...bioWritePromises,
+    yamlWritePromise
+  ]);
 }
 
 const getPeople = () => fetchFieldsFromTable(peopleTableId, peopleFieldsToFetch, "NOT({Website Category} = '')")
-  .then(data => {
-    console.log(data);
-    return Promise.all(data.map(async (item) => {
-      if (item.Photo) {
-        await downloadAndSaveFile(item.Photo[0].url, path.join(__dirname, item.Photo[0].filename));
-        console.log(`Downloaded and saved: ${item.Photo[0].filename}`);
-      }
-    })).then(() => generateProfilesYaml(data));
-  })
+  .then(generateProfilesYaml)
   .then(() => {
     console.log('Process completed successfully');
   })
@@ -151,37 +150,40 @@ const getResources = () => fetchFieldsFromTable(resourcesTableId, resourcesField
     console.log('Fetched resources data:', data, null, 2);
 
     // Process the data
-    const processedData = data.map(item => ({
-      type: item.type,
-      id: item.id,
-      abbr: item.abbr,
-      video: item.video,
-      website: item.website,
-      pdf: item.pdf,
-      author: item.author_name ? item.author_name.join(' and ') : undefined,
-      author_id: item.author_id ? `|${item.author_id.join('|')}|` : undefined,
-      title: item.title,
-      year: item.year,
-      journal: item.journal,
-      volume: item.volume,
-      number: item.number,
-      pages: item.pages,
-      publisher: item.publisher,
-      doi: item.doi,
-      tags: item.tags ? `|${item.tags.join('|')}|` : undefined,
-      preview: item.thumbnail ? `${item.id}${path.extname(item.thumbnail[0].filename)}` : undefined, // Convert thumbnail to preview with correct file extension
-      note: item.note
-    }));
+    const processedData = data.map(item => {
+      return {
+        type: item.type,
+        id: item.id,
+        abbr: item.abbr,
+        video: item.video,
+        website: item.website,
+        pdf: item.pdf,
+        author: item.author_name ? item.author_name.join(' and ') : undefined,
+        author_id: item.author_id ? `|${item.author_id.join('|')}|` : undefined,
+        title: item.title,
+        year: item.year,
+        journal: item.journal,
+        volume: item.volume,
+        number: item.number,
+        pages: item.pages,
+        publisher: item.publisher,
+        doi: item.doi,
+        tags: item.tags ? `|${item.tags.join('|')}|` : undefined,
+        preview: item.thumbnail ? `${item.id}${path.extname(item.thumbnail[0].filename)}` : undefined,
+        thumbnailUrl: item.thumbnail ? item.thumbnail[0].url : undefined,
+        note: item.note
+      }
+    });
 
     // Download and save thumbnails
     await Promise.all(processedData.map(async (item) => {
       if (item.preview) {
-        const thumbnailUrl = data.find(d => d.id === item.id).thumbnail[0].url;
-        const thumbnailPath = path.join(__dirname, '..', 'assets', 'img', 'publication_preview', `${item.id}.jpg`);
+        const extension = path.extname(item.preview) || '.jpg';
+        const thumbnailPath = path.join(__dirname, '..', 'assets', 'img', 'publication_preview', `${item.id}${extension}`);
 
         try {
-          await downloadAndSaveFile(thumbnailUrl, thumbnailPath);
-          console.log(`Downloaded and saved thumbnail: ${item.id}.jpg`);
+          await downloadAndSaveFile(item.thumbnailUrl, thumbnailPath);
+          console.log(`Downloaded and saved thumbnail: ${item.id}${extension}`);
         } catch (error) {
           console.error(`Error downloading thumbnail for ${item.id}:`, error);
         }

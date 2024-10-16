@@ -26,10 +26,10 @@ groups:
         id: justinsui
         image: justinsui.jpg
         bio: people/bio/justinsui.md
-      - name: Kharisma Montes de Oca⁩, M.S.
+      - name: Kharisma Montes de Oca, M.S.
         id: kharismamontesdeoca
         title: Juris Doctorate 2025 Candidate, Urban Planner, Policy Writer & Project Manager
-        image: kharisma.jpeg
+        image: kharismamontesdeoca.jpeg
         bio: people/bio/kharismamontesdeoca.md
       - name: Steven Brown, Ph.D.
         id: stevenbrown
@@ -56,9 +56,9 @@ groups:
         title: Astronomy Researcher at the Nordic Institute for Theoretical Physics
         image: beatrizvillarroel.jpg
       - name: Christopher "Kit" Green, M.D., Ph.D.
-        id: christophergreen
+        id: christopherkitgreen
         title: Professor in Forensic Neuroimaging, Department of Psychiatry and Behavioral Neurosciences, Wayne State University Medical School and Detroit Medical Center<br/>Former Senior Division Analyst for Neurosciences, Central Intelligence Agency (CIA)
-        image: christophergreen.jpg
+        image: christopherkitgreen.jpg
       - name: Diana Walsh Pasulka, Ph.D.
         id: dianawalshpasulka
         title: Professor of Religious Studies, University of North Carolina, Wilmington
@@ -67,10 +67,14 @@ groups:
         id: garrypnolan
         title: Executive Director of the Board, <a href='https://thesolfoundation.org/'>Sol Foundation</a><br/>Professor in the Department of Pathology, <a href='https://med.stanford.edu/profiles/garry-nolan'>Stanford University School of Medicine</a>
         image: garrypnolan.jpg
+      - name: Harold "Hal" Puthoff, Ph.D.
+        id: haroldhalputhoff
+        title: Founder and president, EarthTech International and the Institute for Advanced Studies at Austin<br/>Former research scientist and consultant at Stanford Research Institute (SRI) and the National Security Agency (NSA)
+        image: haroldhalputhoff.jpeg
       - name: Iya Whiteley, Ph.D.
         id: iyawhiteley
         title: Space Psychologist and Director of the Centre for Space Medicine, Department of Space and Climate Physics, University College London (UCL)
-        image: iyawhitely.jpg
+        image: iyawhiteley.jpg
       - name: J. Allen Hynek, Ph.D.
         id: jallenhynek
         title: Astronomer, Scientific Advisor to the US Air Force - Project Sign, Project Grudge, and Project Blue Book
@@ -83,6 +87,10 @@ groups:
         id: jamesemcdonald
         title: Physicist, Professor of Atmospheric Sciences
         image: jamesemcdonald.gif
+      - name: Jeffrey Kripal, Ph.D.
+        id: jeffreykripal
+        title: J. Newton Rayzor Chair in Philosophy and Religious Thought, Rice University
+        image: jeffreykripal.jpg
       - name: Kevin Knuth, Ph.D.
         id: kevinknuth
         title: Professor of Physics, University at Albany
