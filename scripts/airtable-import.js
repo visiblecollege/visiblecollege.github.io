@@ -11,7 +11,7 @@ const yaml = require('js-yaml');
 const base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE_ID);
 
 const peopleTableId = process.env.AIRTABLE_PEOPLE_TABLE_ID;
-const peopleFieldsToFetch = ['Name', 'id', 'Website Category', 'Photo', 'Research Bio', 'Website Title'];
+const peopleFieldsToFetch = ['Name', 'id', 'Website Category', 'Photo', 'Research Bio', 'Website Title', 'Profile Page Content'];
 const resourcesTableId = process.env.AIRTABLE_RESOURCES_TABLE_ID;
 const resourcesFieldsToFetch = ['id', 'website', 'author_name', 'author_id', 'type', 'abbr', 'thumbnail', 'title', 'publisher', 'year', 'video', 'doi', 'tags', 'pdf', 'abstract', 'note'];
 
@@ -77,6 +77,7 @@ async function generateProfilesYaml(data) {
   const photoDownloadPromises = [];
   const bioWritePromises = [];
   const memberProcessingPromises = [];
+  const profilePagePromises = [];
 
   for (const item of data) {
     memberProcessingPromises.push((async () => {
@@ -86,6 +87,10 @@ async function generateProfilesYaml(data) {
         title: item['Website Title'],
         image: item.Photo ? `${item.id}${path.extname(item.Photo[0].filename)}` : undefined
       };
+
+      if (item['Profile Page Content']) {
+        member.profile_page = `people/${item.id}`;
+      }
 
       if (item.Photo && item.Photo.length > 0) {
         const extension = path.extname(item.Photo[0].filename) || '.jpg';
@@ -111,6 +116,32 @@ async function generateProfilesYaml(data) {
       } else if (item['Website Category']?.toLowerCase()?.includes('public figure')) {
         profiles.groups[1].members.push(member);
       }
+
+      if (item['Profile Page Content']) {
+        const profilePageContent = `---
+layout: profile
+title: ${item.Name}
+description:
+permalink: /people/${item.id}
+
+profile:
+    name: ${item.Name}
+    id: ${item.id}
+    align: left
+    title: ${item['Website Title'] || ''}
+    image: ${member.image || ''}
+---
+
+${item['Profile Page Content']}
+`;
+
+        const profilePagePath = path.join(__dirname, '..', '_pages', 'people', `${item.id}.md`);
+        profilePagePromises.push(
+          fsPromises.writeFile(profilePagePath, profilePageContent, 'utf8')
+            .then(() => console.log(`Created profile page for ${item.Name} at ${profilePagePath}`))
+            .catch(error => console.error(`Error writing profile page for ${item.Name}:`, error))
+        );
+      }
     })());
   }
 
@@ -131,6 +162,7 @@ async function generateProfilesYaml(data) {
   await Promise.all([
     ...photoDownloadPromises,
     ...bioWritePromises,
+    ...profilePagePromises,
     yamlWritePromise
   ]);
 }
