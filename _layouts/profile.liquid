@@ -29,8 +29,11 @@ layout: default
       </div>
   </article>
 
-  <h2>References</h2>
-  <div class="publications">
-    {% bibliography --sort_by year --order descending --group_by none --query @*[author_id~=\|{{ profile.id }}\|] %}
-  </div>
+  {% capture reference_count %}{% bibliography_count --sort_by year --order descending --group_by none --query @*[author_id~=\|{{ profile.id }}\|] %}{% endcapture %}
+  {% if reference_count != "0" %}
+    <h2>References</h2>
+    <div class="publications">
+      {% bibliography --sort_by year --order descending --group_by none --query @*[author_id~=\|{{ profile.id }}\|] %}
+    </div>
+  {% endif %}
 </div>
