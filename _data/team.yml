@@ -2,13 +2,13 @@
   title: Director
   image: stevenbrown.jpg
   align: left
-  bio: people/bio/stevenbrown.md
+  bio: people/bio/stevenbrown_team.md
   image_circular: false # crops the image to make it circular
   more_info:
 - name: Jed Verity, Ph.D.
   title: Associate Director
   image: jedverity.jpg
-  bio: people/bio/jedverity.md
+  bio: people/bio/jedverity_team.md
   align: left
   image_circular: false # crops the image to make it circular
   more_info:
