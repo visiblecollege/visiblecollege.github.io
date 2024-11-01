@@ -12,3 +12,10 @@
   align: left
   image_circular: false # crops the image to make it circular
   more_info:
+- name: Janis Whitlock, Ph.D.
+  title: Director of Research
+  image: janiswhitlock.jpg
+  bio: people/bio/janiswhitlock.md
+  align: left
+  image_circular: false # crops the image to make it circular
+  more_info:
