@@ -2,6 +2,7 @@
 layout: post
 title: Growing the Visible College
 date: 2024-11-13 00:00:00-0400
+thumbnail_url: news/growing_vc_thumbnail.png
 summary: We're looking for scholars in all fields to help us think critically and open-mindedly about UAP/NHI
 inline: false
 related_posts: false
