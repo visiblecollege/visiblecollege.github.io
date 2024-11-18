@@ -2,7 +2,7 @@
 layout: post
 title: Inaugural teach-in at Yale University
 date: 2024-09-27 00:00:00-0400
-thumbnail_url: news/yale_teachin_thumbnail.png
+thumbnail_url: news/yale_teachin_thumbnail2.png
 summary: In partnership with the Yale Student UFO Society and the New Paradigm Institute, the Visible College gathers scholars to discuss what UAP might mean to humanity
 inline: false
 related_posts: false
