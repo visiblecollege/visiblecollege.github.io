@@ -31,6 +31,11 @@ groups:
         title: Juris Doctorate 2025 Candidate, Urban Planner, Policy Writer & Project Manager
         image: kharismamontesdeoca.jpeg
         bio: people/bio/kharismamontesdeoca.md
+      - name: Mike Senter-Zapata, M.D.
+        id: mikesenterzapata
+        title: Instructor of Medicine, Harvard Medical School
+        image: mikesenterzapata.jpg
+        bio: people/bio/mikesenterzapata.md
       - name: Steven Brown, Ph.D.
         id: stevenbrown
         title: Associate Professor of Teaching Philosophy, The Ohio State University
