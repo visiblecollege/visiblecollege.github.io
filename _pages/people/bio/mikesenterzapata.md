@@ -2,4 +2,4 @@ Dr. Senter-Zapata is a practicing, board-certified Internal Medicine attending p
 
 Dr. Senter-Zapata earned a bachelor’s degree from Harvard University in Human Evolutionary Biology and completed medical school at Washington University in St. Louis School of Medicine. He then completed Internal Medicine residency training at Brigham and Women’s Hospital/Harvard Medical School followed by a Healthcare Innovation research fellowship at Massachusetts General Hospital. 
 
-Dr. Senter-Zapata is interested in the biological and health effects that UAP may pose to humans.
+Dr. Senter-Zapata is interested in the immediate and long-term biological effects of anomalous health incidents.
