@@ -45,6 +45,10 @@ groups:
         id: taniasearle
         image: taniasearle.jpg
         bio: people/bio/taniasearle.md
+      - name: Alaina Hardie
+        id: alainahardie
+        image: alainahardie.jpg
+        bio: people/bio/alainahardie.md
   - label: Public Figures
     summary: Scholars working publicly in UAP Studies or adjacent fields who are not directly associated with The Visible College, but whose work we consider integral to an understanding of the subject area as a whole.
     members:

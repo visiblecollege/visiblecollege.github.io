@@ -19,3 +19,10 @@
   align: left
   image_circular: false # crops the image to make it circular
   more_info:
+- name: Alaina Hardie
+  title: Director of Technology
+  image: alainahardie.jpg
+  bio: people/bio/alainahardie.md
+  align: left
+  image_circular: false # crops the image to make it circular
+  more_info:
