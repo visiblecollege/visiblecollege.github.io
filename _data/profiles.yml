@@ -47,6 +47,7 @@ groups:
         bio: people/bio/taniasearle.md
       - name: Alaina Hardie
         id: alainahardie
+        title: Director of Technology
         image: alainahardie.jpg
         bio: people/bio/alainahardie.md
   - label: Public Figures
