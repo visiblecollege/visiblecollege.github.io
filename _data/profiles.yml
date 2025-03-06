@@ -2,11 +2,6 @@ groups:
   - label: Research Associates
     summary: Academics and professionals who are working or have worked on research projects or other initiatives of The Visible College.
     members:
-      - name: Christian Peters, Ph.D.
-        id: christianpeters
-        title: Managing Director, Bremen International Graduate School of Social Sciences (BIGSSS), University of Bremen
-        image: christianpeters.jpeg
-        bio: people/bio/christianpeters.md
       - name: Janis Whitlock, Ph.D., M.P.H.
         id: janiswhitlock
         title: Research Scientist Emerita
@@ -17,30 +12,41 @@ groups:
         title: Ph.D. in Tibetan Buddhism
         image: jedverity.jpg
         bio: people/bio/jedverity.md
-      - name: John L. Roberts, Ph.D.
-        id: johnlroberts
-        title: Associate Professor of Psychology, University of West Georgia
-        image: johnlroberts.jpg
-        bio: people/bio/johnlroberts.md
-      - name: Justin Sui, Ph.D.
-        id: justinsui
-        image: justinsui.jpg
-        bio: people/bio/justinsui.md
-      - name: Kharisma Montes de Oca, M.S.
-        id: kharismamontesdeoca
-        title: Juris Doctorate 2025 Candidate, Urban Planner, Policy Writer & Project Manager
-        image: kharismamontesdeoca.jpeg
-        bio: people/bio/kharismamontesdeoca.md
-      - name: Mike Senter-Zapata, M.D.
-        id: mikesenterzapata
-        title: Instructor of Medicine, Harvard Medical School
-        image: mikesenterzapata.jpg
-        bio: people/bio/mikesenterzapata.md
       - name: Steven Brown, Ph.D.
         id: stevenbrown
         title: Associate Professor of Teaching Philosophy, The Ohio State University
         image: stevenbrown.jpg
         bio: people/bio/stevenbrown.md
+        profile_page: /stevenbrown
+      - name: Justin Sui, Ph.D.
+        id: justinsui
+        image: justinsui.jpg
+        bio: people/bio/justinsui.md
+      - name: Nicolas Cuneen, Ph.D.
+        id: nickcuneen
+        title: Postdoctoral Fellow and lecturer, UCLouvain
+        image: nickcuneen.jpg
+        bio: people/bio/nickcuneen.md
+      - name: John L. Roberts, Ph.D.
+        id: johnlroberts
+        title: Associate Professor of Psychology, University of West Georgia
+        image: johnlroberts.jpg
+        bio: people/bio/johnlroberts.md
+      - name: Kharisma Montes de Oca, M.S.
+        id: kharismamontesdeoca
+        title: Juris Doctorate 2025 Candidate, Urban Planner, Policy Writer & Project Manager
+        image: kharismamontesdeoca.jpeg
+        bio: people/bio/kharismamontesdeoca.md
+      - name: Christian Peters, Ph.D.
+        id: christianpeters
+        title: Managing Director, Bremen International Graduate School of Social Sciences (BIGSSS), University of Bremen
+        image: christianpeters.jpeg
+        bio: people/bio/christianpeters.md
+      - name: Mike Senter-Zapata, M.D.
+        id: mikesenterzapata
+        title: Instructor of Medicine, Harvard Medical School
+        image: mikesenterzapata.jpg
+        bio: people/bio/mikesenterzapata.md
       - name: Tania Searle, Ph.D.
         id: taniasearle
         image: taniasearle.jpg
@@ -50,6 +56,7 @@ groups:
         title: Director of Technology
         image: alainahardie.jpg
         bio: people/bio/alainahardie.md
+
   - label: Public Figures
     summary: Scholars working publicly in UAP Studies or adjacent fields who are not directly associated with The Visible College, but whose work we consider integral to an understanding of the subject area as a whole.
     members:

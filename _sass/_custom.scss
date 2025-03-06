@@ -1,0 +1,66 @@
+// Custom styles
+
+// Article author and date styling
+.post-author,
+.post-date,
+.post-updated {
+  margin-bottom: 0.5rem;
+}
+
+.post-author {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: var(--global-text-color);
+}
+
+.post-date,
+.post-updated {
+  color: var(--global-text-color-light);
+  font-size: 0.875rem;
+}
+
+// Articles list styling
+.article-list-item {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.article-list-item p {
+  margin: 0;
+}
+
+.article-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.article-title:hover {
+  color: var(--global-theme-color);
+}
+
+.article-author {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--global-text-color);
+  margin-top: 0.2rem;
+}
+
+.article-summary {
+  font-size: 0.9rem;
+  color: var(--global-text-color);
+  margin-top: 0.2rem;
+}
+
+.article-date {
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+  margin-top: 0.2rem;
+}
+
+.articles .mt-3 a {
+  color: var(--global-theme-color);
+  font-size: 0.9rem;
+}

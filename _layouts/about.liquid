@@ -51,7 +51,13 @@ layout: page
             </div>
 
             <div class="clearfix">
-              <h5 style="margin-bottom: 0.1rem"><strong>{{ profile.name }}</strong></h5>
+              <h5 style="margin-bottom: 0.1rem"><strong>
+                {% if profile.profile_page %}
+                  <a href="{{ profile.profile_page | relative_url }}">{{ profile.name }}</a>
+                {% else %}
+                  {{ profile.name }}
+                {% endif %}
+              </strong></h5>
               <h6 style="margin-bottom: 0.8rem">{{ profile.title }}</h6>
               {% if profile.bio %}
                 {% capture bio_content %}{% include_relative {{ profile.bio }} %}{% endcapture %}

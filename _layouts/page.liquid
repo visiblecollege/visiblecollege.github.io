@@ -7,6 +7,15 @@ layout: default
     {% if page.description  %}
       <p class="post-description">{{ page.description }}</p>
     {% endif %}
+    {% if page.author %}
+      <p class="post-author"><strong>Author:</strong> {{ page.author }}</p>
+    {% endif %}
+    {% if page.date %}
+      <p class="post-date"><small>Published: {{ page.date | date: "%B %d, %Y" }}</small></p>
+    {% endif %}
+    {% if page.updated %}
+      <p class="post-updated"><small>Updated: {{ page.updated | date: "%B %d, %Y" }}</small></p>
+    {% endif %}
   </header>
 
   <article>

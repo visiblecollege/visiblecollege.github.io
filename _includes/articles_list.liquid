@@ -1,0 +1,43 @@
+{% assign articles = site.articles | sort: "importance" %}
+
+{% if articles.size > 0 %}
+<div class="articles">
+  <div
+    class="table-responsive"
+    {% if site.articles_list.scrollable and articles.size > 3 %}
+      style="max-height: 60vw"
+    {% endif %}
+  >
+    <table class="table table-sm table-borderless">
+      {% if site.articles_list.limit %}
+        {% assign articles_limit = site.articles_list.limit %}
+      {% else %}
+        {% assign articles_limit = articles.size %}
+      {% endif %}
+      {% for article in articles limit: articles_limit %}
+        <tr>
+          <td class="article-list-item">
+            <p><a href="{% if article.redirect %}{{ article.redirect }}{% else %}{{ article.url | relative_url }}{% endif %}" class="article-title">{{ article.title }}</a></p>
+            <p class="article-author">by {{ article.author }}</p>
+            <p class="article-summary">{{ article.description | truncate: 250 }}</p>
+            {% if article.date %}
+              <p class="article-date">{{ article.date | date: "%B %d, %Y" }}</p>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+  </div>
+  
+  {% if site.articles_list.limit and articles.size > site.articles_list.limit %}
+    <div class="mt-3">
+      <a href="{{ '/articles/' | relative_url }}" class="text-decoration-none">
+        View all articles
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </div>
+  {% endif %}
+</div>
+{% else %}
+  <p>No articles so far...</p>
+{% endif %} 

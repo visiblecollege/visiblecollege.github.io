@@ -1,28 +1,31 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/jekyll
 {
-  "name": "Jekyll",
-  "image": "mcr.microsoft.com/devcontainers/jekyll",
-
+  "name": "Jekyll (Debian)",
+  // Use a Debian-based image with ARM64 support
+  "image": "mcr.microsoft.com/devcontainers/base:bullseye",
   // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
-    "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-      "packages": "build-essential,imagemagick,inotify-tools,procps,ruby-full,zlib1g-dev"
-    },
     "ghcr.io/devcontainers-contrib/features/prettier:1": {}
   },
-
-  // Optionally: run jekyll serve automatically on container entering using the Docker entrypoint
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "apt-get update && apt-get install -y ruby-full build-essential zlib1g-dev git inotify-tools python2 python-is-python2 libsqlite3-dev imagemagick && gem install jekyll bundler",
+  // Run our entry point script after attaching
   "postAttachCommand": "./bin/entry_point.sh",
-
+  // Set the proper workspace mount
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/visiblecollege.github.io,type=bind,consistency=cached",
+  "workspaceFolder": "/workspaces/visiblecollege.github.io",
+  // We'll use root to ensure permissions work correctly
+  "remoteUser": "root",
   "customizations": {
     "vscode": {
-      "extensions": ["sissel.shopify-liquid", "yzhang.markdown-all-in-one"],
+      "extensions": [
+        "sissel.shopify-liquid",
+        "yzhang.markdown-all-in-one"
+      ],
       "settings": {
         "editor.formatOnSave": true
       }
     }
-  },
-
-  "remoteUser": "vscode"
+  }
 }

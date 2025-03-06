@@ -1,0 +1,29 @@
+<div class="col">
+  <a href="{% if article.redirect %}{{ article.redirect }}{% else %}{{ article.url | relative_url }}{% endif %}">
+    <div class="card h-100 hoverable">
+      {% if article.img %}
+        {%
+          include figure.liquid
+          loading="eager"
+          path=article.img
+          sizes = "250px"
+          alt="article thumbnail"
+          class="card-img-top"
+        %}
+      {% endif %}
+      <div class="card-body">
+        <h2 class="card-title">{{ article.title }}</h2>
+        <p class="card-text">{{ article.description }}</p>
+        <p class="card-text">
+          <small class="text-muted">
+            Author: {{ article.author }} <br>
+            Published: {{ article.date | date: "%B %d, %Y" }} <br>
+            {% if article.updated %}
+            Updated: {{ article.updated | date: "%B %d, %Y" }}
+            {% endif %}
+          </small>
+        </p>
+      </div>
+    </div>
+  </a>
+</div> 

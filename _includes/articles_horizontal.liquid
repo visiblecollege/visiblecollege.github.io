@@ -1,0 +1,28 @@
+<div class="col mb-4">
+  <a href="{% if article.redirect %}{{ article.redirect }}{% else %}{{ article.url | relative_url }}{% endif %}">
+    <div class="card h-100 hoverable">
+      <div class="row no-gutters">
+        {% if article.img %}
+          <div class="col-md-6">
+            {% include figure.liquid loading="eager" path=article.img sizes="(min-width: 768px) 156px, 50vw" alt="article thumbnail" class="card-img" %}
+          </div>
+        {% endif %}
+        <div class="{% if article.img %}col{% else %}col-md-12{% endif %}">
+          <div class="card-body">
+            <h3 class="card-title">{{ article.title }}</h3>
+            <p class="card-text">{{ article.description }}</p>
+            <p class="card-text">
+              <small class="text-muted">
+                Author: {{ article.author }} <br>
+                Published: {{ article.date | date: "%B %d, %Y" }} <br>
+                {% if article.updated %}
+                Updated: {{ article.updated | date: "%B %d, %Y" }}
+                {% endif %}
+              </small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div> 

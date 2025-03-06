@@ -50,6 +50,14 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
+    <!-- Articles -->
+    {% if site.articles_list.enabled %}
+      <h4>
+        <a href="{{ '/articles/' | relative_url }}" style="color: inherit">Featured <strong>articles</strong></a>
+      </h4>
+      {% include articles_list.liquid %}
+    {% endif %}
+
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
       <h2>

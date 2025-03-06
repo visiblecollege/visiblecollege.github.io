@@ -4,6 +4,7 @@
   align: left
   bio: people/bio/stevenbrown_team.md
   image_circular: false # crops the image to make it circular
+  profile_page: /stevenbrown
   more_info:
 - name: Jed Verity, Ph.D.
   title: Associate Director

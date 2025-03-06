@@ -12,6 +12,7 @@ footer_text:
 keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+encoding: utf-8 # explicitly set the encoding
 
 url: https://visiblecollege.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -187,11 +188,19 @@ collections:
   projects:
     output: true
     permalink: /:collection/:title/
+  articles:
+    output: true
+    permalink: /:collection/:title/
 
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
+
+articles_list:
+  enabled: true
+  scrollable: true # adds a vertical scroll bar if there are more than 3 articles
+  limit: 3 # leave blank to include all articles in the `_articles` folder
 
 latest_posts:
   enabled: false
@@ -237,6 +246,8 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - "**/*.bak"
+  - "**/*.original"
 keep_files:
   - CNAME
   - .nojekyll
@@ -397,8 +408,6 @@ imagemagick:
     - ".png"
     - ".tiff"
     - ".gif"
-  exclude_input_formats:
-    - ".webp"
   output_formats:
     webp: "-quality 85"
 
