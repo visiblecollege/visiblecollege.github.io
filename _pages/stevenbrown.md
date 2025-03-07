@@ -7,13 +7,11 @@ nav: false
 ---
 
 # Videos and Lectures
+---
 ## UFO/UAP/NHI
 
-### Alien Agendas, the Prime Directive, and the Problem of Evil
+Dr Brown has attempted to summarize key people and events within the US Goverment that provide substantial evidence for the reality of contact with Non-Human Intelligences (NHI) and their associate with Unidentified Flying Objects (UFOs) and Unidentified Anomalous Phenomena (UAP). He's also engaged in some informed speculation regarding the possible nature and intent of such beings, under the assumption that they are real.
 
-{% include youtube.liquid url="https://www.youtube.com/watch?v=W6NQ3bw8QHc" %}
-
-*If alien beings have been interacting with our planet, why are they avoiding open contact with all of humanity? Perhaps we can glean some insight from science fiction, political philosophy, and the philosophy of religion.*
 
 ### It's Irrational to Ignore UFOs (David Grusch is a Big Deal)
 
@@ -21,7 +19,16 @@ nav: false
 
 *Some of the most well-informed people in DC believe in a secret Alien/UFO research program. You should take this seriously.*
 
+### Alien Agendas, the Prime Directive, and the Problem of Evil
+
+{% include youtube.liquid url="https://www.youtube.com/watch?v=W6NQ3bw8QHc" %}
+
+*If alien beings have been interacting with our planet, why are they avoiding open contact with all of humanity? Perhaps we can glean some insight from science fiction, political philosophy, and the philosophy of religion.*
+
+
 ## The Nazca Mummies
+
+Dr Brown has been seriously engaged with the study of the so-called Nazca Mummies, reaching out to nearly all of the relevant parties to obtain as much data as possible and working with a team of qualified scientists and medical professionals to understand as best we can what they are. Although initially he was open to the possibility that they were dried bodies of non-humans, his view has shifted toward the idea that they are heavily modified human bodies, though potenntially still ancient.
 
 ### The Nazca Mummies as Archaeological Objects
 
@@ -35,9 +42,8 @@ nav: false
 
 *A critical and open-minded examination of the Nazca mummies controversy. NOTE: This video contains views that were falsified by later research.*
 
-
-
 # Podcasts and Interviews
+---
 
 ## 2024
 - Dec 22 - Neon Galactic #69: [YouTube](https://youtu.be/WFBZV9ljIyk?si=-xCiiT9yv1idFEDh), [Apple](https://podcasts.apple.com/us/podcast/professor-steven-brown-neon-galactic-episode-69/id1761471463?i=1000681325775), [Spotify](https://open.spotify.com/episode/16c2vWEqyBZH1OvuAAPCFB)
@@ -58,5 +64,6 @@ nav: false
 - Jul 24 - More Human #39: [Apple](https://podcasts.apple.com/us/podcast/ep-39-being-critically-open-minded-about-aliens-with/id1615089594?i=1000622208934), [Spotify](https://open.spotify.com/episode/5Sca8l8BWHZ2qL8vEHD3zE)
 
 # News
+---
 
 - Jul 7, 2024 - Roswell Daily Record: [*More information about Nazca mummies causes some to rethink earlier opinions*](https://www.rdrnews.com/news/local/more-information-about-nazca-mummies-causes-some-to-rethink-earlier-opinions/article_76479aa8-3bf5-11ef-8fd5-1b829f29e194.html)
