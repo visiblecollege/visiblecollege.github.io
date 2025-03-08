@@ -8,6 +8,13 @@ nav: false
 
 # Videos and Lectures
 ---
+
+### WatchMojo - Disclosure, NHI Motivations and AI
+{% include youtube.liquid url="https://www.youtube.com/watch?v=i6Ehuzdqjhg" %}
+
+*A nice interview that covers a lot of terrain: UFOs, religion, global politics, and AI*
+
+
 ## UFO/UAP/NHI
 
 Dr Brown has attempted to summarize key people and events within the US Goverment that provide substantial evidence for the reality of contact with Non-Human Intelligences (NHI) and their associate with Unidentified Flying Objects (UFOs) and Unidentified Anomalous Phenomena (UAP). He's also engaged in some informed speculation regarding the possible nature and intent of such beings, under the assumption that they are real.
@@ -45,6 +52,9 @@ Dr Brown has been seriously engaged with the study of the so-called Nazca Mummie
 # Podcasts and Interviews
 ---
 
+## 2025
+- Mar 7 - WatchMojo's Unveiled Podcast #8: [YouTube](https://www.youtube.com/watch?v=i6Ehuzdqjhg)
+
 ## 2024
 - Dec 22 - Neon Galactic #69: [YouTube](https://youtu.be/WFBZV9ljIyk?si=-xCiiT9yv1idFEDh), [Apple](https://podcasts.apple.com/us/podcast/professor-steven-brown-neon-galactic-episode-69/id1761471463?i=1000681325775), [Spotify](https://open.spotify.com/episode/16c2vWEqyBZH1OvuAAPCFB)
 - Dec 8 - The Good Trouble Show S2 #67: [YouTube](https://youtu.be/Kmtmkc4Luu8?si=Ac516KtnDwuarmJ2), [Apple](https://podcasts.apple.com/ca/podcast/visible-college-scholars-unlock-uap-ufo-mysteries/id1676750079?i=1000684698960), [Spotify](https://open.spotify.com/episode/3G0HOxaeDFUhWMoBjOrP25?si=s5eUkQOFRfeHRLHpzwAiRA)
@@ -66,4 +76,4 @@ Dr Brown has been seriously engaged with the study of the so-called Nazca Mummie
 # News
 ---
 
-- Jul 7, 2024 - Roswell Daily Record: [*More information about Nazca mummies causes some to rethink earlier opinions*](https://www.rdrnews.com/news/local/more-information-about-nazca-mummies-causes-some-to-rethink-earlier-opinions/article_76479aa8-3bf5-11ef-8fd5-1b829f29e194.html)
+- Jul 7, 2024 - Roswell Daily Record: *[More information about Nazca mummies causes some to rethink earlier opinions](https://www.rdrnews.com/news/local/more-information-about-nazca-mummies-causes-some-to-rethink-earlier-opinions/article_76479aa8-3bf5-11ef-8fd5-1b829f29e194.html)*
