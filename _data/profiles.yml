@@ -51,6 +51,10 @@ groups:
         id: taniasearle
         image: taniasearle.jpg
         bio: people/bio/taniasearle.md
+      - name: Brannon Wheeler, Ph.D.
+        id: brannonwheeler
+        image: brannonwheeler.jpg
+        bio: people/bio/brannonwheeler.md
       - name: Alaina Hardie
         id: alainahardie
         title: Director of Technology
