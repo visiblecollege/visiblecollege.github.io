@@ -22,11 +22,11 @@ groups:
         id: justinsui
         image: justinsui.jpg
         bio: people/bio/justinsui.md
-      - name: Nicolas Cuneen, Ph.D.
-        id: nickcuneen
-        title: Postdoctoral Fellow and lecturer, UCLouvain
-        image: nickcuneen.jpg
-        bio: people/bio/nickcuneen.md
+      # - name: Nicolas Cuneen, Ph.D.
+      #   id: nickcuneen
+      #   title: Postdoctoral Fellow and lecturer, UCLouvain
+      #   image: nickcuneen.jpg
+      #   bio: people/bio/nickcuneen.md
       - name: John L. Roberts, Ph.D.
         id: johnlroberts
         title: Associate Professor of Psychology, University of West Georgia

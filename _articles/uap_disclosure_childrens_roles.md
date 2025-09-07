@@ -8,6 +8,7 @@ date: 2025-03-06
 updated: 2025-03-06
 importance: 1
 category: research
+published: false
 ---
 
 … 23, 24, 25 – ready or not, here they come! And, by many accounts, here they have been, perhaps since the dawn of humanity, despite millennia of secrecy and nearly a century of intentional and coordinated obfuscation. While some of the latter was certainly motivated by governments’ desires to pursue or maintain a strategic technological advantage over their adversaries through the reverse-engineering of exotic craft, there has also been a recurring suggestion that the truth has been hidden because humanity is not prepared to incorporate it into their worldviews without upending the material structure of society. The secret-holders have feared the consequences of such ontological shock, and perhaps with good reason. 
