@@ -64,3 +64,17 @@
   color: var(--global-theme-color);
   font-size: 0.9rem;
 }
+
+// Dark mode logo switching
+.dark-mode-logo {
+  display: none;
+}
+
+// When dark mode is active, hide light mode logos and show dark mode logos
+[data-theme="dark"] .light-mode-logo {
+  display: none;
+}
+
+[data-theme="dark"] .dark-mode-logo {
+  display: inline-block;
+}

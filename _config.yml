@@ -8,6 +8,7 @@ middle_name:
 last_name:
 email: info@thevisiblecollege.org
 logo: visible-college.png # logo image file in assets/img/
+logo_dark: visible-college-dark.png # dark mode logo image file in assets/img/
 description:
 footer_text:
 keywords: # add your own keywords or leave empty

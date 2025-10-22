@@ -15,6 +15,13 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
+<div class="homepage-logo-container" style="text-align: center; margin: 2rem 0;">
+  <img src="{{ site.logo | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }}" class="homepage-logo light-mode-logo" style="height: 120px; max-width: 600px;">
+  {% if site.logo_dark %}
+  <img src="{{ site.logo_dark | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }} (Dark Mode)" class="homepage-logo dark-mode-logo" style="height: 120px; max-width: 600px; display: none;">
+  {% endif %}
+</div>
+
 We are a volunteer group of scholars conducting and promoting serious research into Unidentified Anomalous Phenomena (UAP) and related topics.
 
 Our work has been underway at various levels for some time now, but we have just begun to work together publicly.

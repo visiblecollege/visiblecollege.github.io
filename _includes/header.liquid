@@ -5,16 +5,14 @@
       {% if page.permalink != '/' %}
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
           {% if site.logo %}
-            <img src="{{ site.logo | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }}" class="logo-img" style="height: 35px; margin-right: 15px; max-width: 200px;">
+            <img src="{{ site.logo | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }}" class="logo-img light-mode-logo" style="height: 35px; max-width: 200px;">
+          {% endif %}
+          {% if site.logo_dark %}
+            <img src="{{ site.logo_dark | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }} (Dark Mode)" class="logo-img dark-mode-logo" style="height: 35px; max-width: 200px; display: none;">
           {% endif %}
         </a>
       {% else %}
-        <!-- Homepage: Show larger logo only -->
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.logo %}
-            <img src="{{ site.logo | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }}" class="logo-img" style="height: 60px; max-width: 300px;">
-          {% endif %}
-        </a>
+        <!-- Homepage: No logo in header -->
       {% elsif site.enable_navbar_social %}
         <!-- Social Icons -->
         <div class="navbar-brand social">{% include social.liquid %}</div>
