@@ -71,10 +71,10 @@
 }
 
 // When dark mode is active, hide light mode logos and show dark mode logos
-[data-theme="dark"] .light-mode-logo {
+html[data-theme="dark"] .light-mode-logo {
   display: none;
 }
 
-[data-theme="dark"] .dark-mode-logo {
+html[data-theme="dark"] .dark-mode-logo {
   display: inline-block;
 }

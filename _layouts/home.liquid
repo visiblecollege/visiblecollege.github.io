@@ -3,14 +3,12 @@ layout: default
 ---
 <div class="home post">
   <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
+    <div class="homepage-logo-container" style="text-align: left; margin: 1rem 0;">
+      <img src="{{ site.logo | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }}" class="homepage-logo light-mode-logo" style="height: 120px; max-width: 600px;">
+      {% if site.logo_dark %}
+      <img src="{{ site.logo_dark | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }} (Dark Mode)" class="homepage-logo dark-mode-logo" style="height: 120px; max-width: 600px; display: none;">
       {% endif %}
-    </h1>
+    </div>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
 

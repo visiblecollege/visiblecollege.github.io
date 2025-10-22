@@ -1,0 +1,35 @@
+<!-- Logo theme switching script -->
+<script>
+// Function to update logo visibility based on theme
+function updateLogoTheme() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  
+  // Update all light mode logos
+  document.querySelectorAll('.light-mode-logo').forEach(logo => {
+    logo.style.display = isDark ? 'none' : 'inline-block';
+  });
+  
+  // Update all dark mode logos
+  document.querySelectorAll('.dark-mode-logo').forEach(logo => {
+    logo.style.display = isDark ? 'inline-block' : 'none';
+  });
+}
+
+// Run on page load
+document.addEventListener('DOMContentLoaded', updateLogoTheme);
+
+// Run when theme changes (listen for theme changes)
+const observer = new MutationObserver(function(mutations) {
+  mutations.forEach(function(mutation) {
+    if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+      updateLogoTheme();
+    }
+  });
+});
+
+// Start observing
+observer.observe(document.documentElement, {
+  attributes: true,
+  attributeFilter: ['data-theme']
+});
+</script>
