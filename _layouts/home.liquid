@@ -5,14 +5,14 @@ layout: default
   <header class="post-header">
     <div class="homepage-logo-container" style="text-align: left; margin: 1rem 0;">
       {% if site.logo_vertical %}
-        <img src="{{ site.logo_vertical | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }}" class="homepage-logo light-mode-logo" style="height: 120px; max-width: 300px;">
+        <img src="{{ site.logo_vertical | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }}" class="homepage-logo light-mode-logo" style="height: 200px; max-width: 300px;">
       {% else %}
-        <img src="{{ site.logo | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }}" class="homepage-logo light-mode-logo" style="height: 120px; max-width: 600px;">
+        <img src="{{ site.logo | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }}" class="homepage-logo light-mode-logo" style="height: 200px; max-width: 600px;">
       {% endif %}
       {% if site.logo_vertical_dark %}
-        <img src="{{ site.logo_vertical_dark | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }} (Dark Mode)" class="homepage-logo dark-mode-logo" style="height: 120px; max-width: 300px; display: none;">
+        <img src="{{ site.logo_vertical_dark | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }} (Dark Mode)" class="homepage-logo dark-mode-logo" style="height: 200px; max-width: 300px; display: none;">
       {% elsif site.logo_dark %}
-        <img src="{{ site.logo_dark | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }} (Dark Mode)" class="homepage-logo dark-mode-logo" style="height: 120px; max-width: 600px; display: none;">
+        <img src="{{ site.logo_dark | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }} (Dark Mode)" class="homepage-logo dark-mode-logo" style="height: 200px; max-width: 600px; display: none;">
       {% endif %}
     </div>
     <p class="desc">{{ page.subtitle }}</p>

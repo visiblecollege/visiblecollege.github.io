@@ -78,3 +78,21 @@ html[data-theme="dark"] .light-mode-logo {
 html[data-theme="dark"] .dark-mode-logo {
   display: inline-block;
 }
+
+// Custom link colors
+a {
+  color: #0000e4 !important; // Light mode: blue
+}
+
+html[data-theme="dark"] a {
+  color: #fdd011 !important; // Dark mode: yellow
+}
+
+// Override any existing link color variables
+:root {
+  --global-theme-color: #0000e4;
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #fdd011;
+}
