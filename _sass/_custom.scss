@@ -79,6 +79,9 @@ html[data-theme="dark"] .dark-mode-logo {
   display: inline-block;
 }
 
+// Override SCSS variables at the top level
+$cyan-color: #0000e4; // Override the default cyan color
+
 // Custom link colors - override theme variables with higher specificity
 :root {
   --global-theme-color: #0000e4 !important; // Light mode: blue
