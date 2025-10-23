@@ -79,13 +79,26 @@ html[data-theme="dark"] .dark-mode-logo {
   display: inline-block;
 }
 
-// Custom link colors - override theme variables
+// Custom link colors - override theme variables with higher specificity
 :root {
-  --global-theme-color: #0000e4; // Light mode: blue
-  --global-hover-color: #0000e4; // Light mode: blue
+  --global-theme-color: #0000e4 !important; // Light mode: blue
+  --global-hover-color: #0000e4 !important; // Light mode: blue
 }
 
 html[data-theme="dark"] {
-  --global-theme-color: #fdd011; // Dark mode: yellow
-  --global-hover-color: #fdd011; // Dark mode: yellow
+  --global-theme-color: #fdd011 !important; // Dark mode: yellow
+  --global-hover-color: #fdd011 !important; // Dark mode: yellow
+}
+
+// Direct element targeting as backup
+a, .nav-link, .navbar-brand, .post-title a, .article-title {
+  color: #0000e4 !important;
+}
+
+html[data-theme="dark"] a, 
+html[data-theme="dark"] .nav-link, 
+html[data-theme="dark"] .navbar-brand, 
+html[data-theme="dark"] .post-title a, 
+html[data-theme="dark"] .article-title {
+  color: #fdd011 !important;
 }
