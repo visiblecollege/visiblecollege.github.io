@@ -11,7 +11,7 @@ logo: visible-college.png # logo image file in assets/img/
 logo_dark: visible-college-dark.png # dark mode logo image file in assets/img/
 logo_vertical: visible-college-vertical.png # vertical logo for homepage
 logo_vertical_dark: visible-college-vertical-dark.png # dark mode vertical logo for homepage
-# Trigger rebuild for SCSS changes
+# Trigger rebuild for theme color changes
 description:
 footer_text:
 keywords: # add your own keywords or leave empty
