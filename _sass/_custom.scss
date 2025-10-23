@@ -79,29 +79,31 @@ html[data-theme="dark"] .dark-mode-logo {
   display: inline-block;
 }
 
-// Override SCSS variables at the top level
-$cyan-color: #0000e4; // Override the default cyan color
-
-// Custom link colors - override theme variables with higher specificity
-:root {
-  --global-theme-color: #0000e4 !important; // Light mode: blue
-  --global-hover-color: #0000e4 !important; // Light mode: blue
-}
-
-html[data-theme="dark"] {
-  --global-theme-color: #fdd011 !important; // Dark mode: yellow
-  --global-hover-color: #fdd011 !important; // Dark mode: yellow
-}
-
-// Direct element targeting as backup
-a, .nav-link, .navbar-brand, .post-title a, .article-title {
+// Force link colors with maximum specificity
+a, 
+a:link, 
+a:visited, 
+a:hover, 
+a:active,
+.nav-link, 
+.navbar-brand, 
+.post-title a, 
+.article-title,
+.btn,
+.btn-primary {
   color: #0000e4 !important;
 }
 
 html[data-theme="dark"] a, 
+html[data-theme="dark"] a:link, 
+html[data-theme="dark"] a:visited, 
+html[data-theme="dark"] a:hover, 
+html[data-theme="dark"] a:active,
 html[data-theme="dark"] .nav-link, 
 html[data-theme="dark"] .navbar-brand, 
 html[data-theme="dark"] .post-title a, 
-html[data-theme="dark"] .article-title {
+html[data-theme="dark"] .article-title,
+html[data-theme="dark"] .btn,
+html[data-theme="dark"] .btn-primary {
   color: #fdd011 !important;
 }
