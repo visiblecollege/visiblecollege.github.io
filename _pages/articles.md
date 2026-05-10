@@ -3,8 +3,7 @@ layout: page
 title: Articles
 permalink: /articles/
 description: Research papers and articles by members of The Visible College
-nav: true
-nav_order: 4
+nav: false
 horizontal: true
 ---
 

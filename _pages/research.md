@@ -2,7 +2,10 @@
 layout: page
 title: Research
 description: Peer-reviewed papers, key texts, and scholarly resources on anomalous phenomena
-permalink: /background
+permalink: /research/
+redirect_from:
+  - /background
+  - /background/
 nav: true
 nav_order: 3
 ---
