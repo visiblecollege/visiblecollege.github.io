@@ -6,11 +6,30 @@
 // ============================================================
 
 // ============================================================
-// THEME COLOR OVERRIDE
+// THEME COLOR OVERRIDE + FORCE LIGHT MODE
 // ============================================================
 :root {
   --global-theme-color: #0018e9;
   --global-hover-color: #0018e9;
+}
+
+// Force light mode (safety net for stale localStorage data-theme="dark")
+html,
+html[data-theme="dark"] {
+  background-color: #ffffff !important;
+  --global-bg-color: #ffffff !important;
+  --global-text-color: #0a0839 !important;
+  --global-divider-color: rgba(10, 8, 57, 0.1) !important;
+}
+html[data-theme="dark"] body {
+  background-color: #ffffff !important;
+  color: #0a0839 !important;
+}
+
+// Hide nav search button (search_enabled: false config + CSS belt-and-suspenders)
+#search-toggle,
+.toggle-container {
+  display: none !important;
 }
 
 // ============================================================
@@ -61,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #0018e9;
   position: relative;
   overflow: hidden;
-  padding: 72px 32px;
+  padding: 56px 32px;
   // Break out of Bootstrap container
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
@@ -306,10 +325,61 @@ html[data-theme="dark"] .article-list-item a.title:hover {
 }
 
 .vc-book-card {
-  border: 1px solid rgba(10, 8, 57, 0.1);
+  border: 1px solid rgba(10, 8, 57, 0.08);
   border-radius: 4px;
-  padding: 18px;
+  padding: 0;
   background: #ffffff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.vc-book-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 24, 233, 0.10);
+}
+
+.vc-book-cover {
+  position: relative;
+  aspect-ratio: 2 / 3;
+  background: linear-gradient(135deg, #0018e9 0%, #0a0839 100%);
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.vc-book-card:nth-child(2n) .vc-book-cover {
+  background: linear-gradient(45deg, #0a0839 0%, #0018e9 100%);
+}
+.vc-book-card:nth-child(3n) .vc-book-cover {
+  background: linear-gradient(180deg, #0018e9 0%, #0a0839 100%);
+}
+.vc-book-card:nth-child(4n) .vc-book-cover {
+  background: linear-gradient(15deg, #0a0839 0%, #1430ff 70%, #0a0839 100%);
+}
+.vc-book-card:nth-child(5n) .vc-book-cover {
+  background: linear-gradient(135deg, #0a0839 0%, #1430ff 50%, #0018e9 100%);
+}
+
+.vc-book-cover-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+  display: block;
+}
+
+.vc-book-cover-year {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  opacity: 0.6;
+  align-self: flex-end;
 }
 
 .vc-book-title {
@@ -317,13 +387,16 @@ html[data-theme="dark"] .article-list-item a.title:hover {
   font-size: 0.92rem;
   font-weight: 600;
   color: #0a0839;
-  margin-bottom: 5px;
+  margin: 0;
+  padding: 0 16px;
   line-height: 1.4;
 }
 
 .vc-book-author {
   font-size: 0.8rem;
   color: rgba(10, 8, 57, 0.55);
+  padding: 12px 16px 14px;
+  margin: 0;
 }
 
 // ============================================================

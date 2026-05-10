@@ -1,20 +1,22 @@
 ---
 layout: page
-title: Research
-description: Peer-reviewed papers, key texts, and scholarly resources on anomalous phenomena
-permalink: /research/
+title: Publications
+description: Curated publications and key texts on anomalous phenomena
+permalink: /publications/
 redirect_from:
+  - /research
+  - /research/
   - /background
   - /background/
 nav: true
 nav_order: 3
 ---
 
-We curate and promote peer-reviewed research, scholarly articles, and key texts relevant to the serious study of anomalous phenomena. The following represents a selection of the most significant work currently available.
+We curate publications, articles, and key texts that inform the serious study of anomalous phenomena. The selection below highlights what we consider essential reading for scholars, researchers, and the curious.
 
 ---
 
-## Peer-Reviewed Papers
+## Publications
 
 <ul class="vc-pub-list">
 
@@ -70,53 +72,80 @@ We curate and promote peer-reviewed research, scholarly articles, and key texts 
 
 ## Key Texts
 
-The following books provide essential context for understanding the historical, scientific, and sociological dimensions of anomalous phenomena research.
+The following books provide essential context for the historical, scientific, and sociological dimensions of anomalous phenomena research.
 
 <div class="vc-book-grid">
 
 <div class="vc-book-card">
-<p class="vc-book-title">The Report on Unidentified Flying Objects</p>
-<p class="vc-book-author">Edward J. Ruppelt, 1956</p>
+  <div class="vc-book-cover">
+    <span class="vc-book-cover-title">The Report on Unidentified Flying Objects</span>
+    <span class="vc-book-cover-year">1956</span>
+  </div>
+  <p class="vc-book-author">Edward J. Ruppelt</p>
 </div>
 
 <div class="vc-book-card">
-<p class="vc-book-title">Passport to Magonia: From Folklore to Flying Saucers</p>
-<p class="vc-book-author">Jacques Vallée, 1969</p>
+  <div class="vc-book-cover">
+    <span class="vc-book-cover-title">Passport to Magonia</span>
+    <span class="vc-book-cover-year">1969</span>
+  </div>
+  <p class="vc-book-author">Jacques Vallée</p>
 </div>
 
 <div class="vc-book-card">
-<p class="vc-book-title">The UFO Experience</p>
-<p class="vc-book-author">J. Allen Hynek, 1972</p>
+  <div class="vc-book-cover">
+    <span class="vc-book-cover-title">The UFO Experience</span>
+    <span class="vc-book-cover-year">1972</span>
+  </div>
+  <p class="vc-book-author">J. Allen Hynek</p>
 </div>
 
 <div class="vc-book-card">
-<p class="vc-book-title">The Invisible College</p>
-<p class="vc-book-author">Jacques Vallée, 1975</p>
+  <div class="vc-book-cover">
+    <span class="vc-book-cover-title">The Invisible College</span>
+    <span class="vc-book-cover-year">1975</span>
+  </div>
+  <p class="vc-book-author">Jacques Vallée</p>
 </div>
 
 <div class="vc-book-card">
-<p class="vc-book-title">The Hynek UFO Report</p>
-<p class="vc-book-author">J. Allen Hynek, 1977</p>
+  <div class="vc-book-cover">
+    <span class="vc-book-cover-title">The Hynek UFO Report</span>
+    <span class="vc-book-cover-year">1977</span>
+  </div>
+  <p class="vc-book-author">J. Allen Hynek</p>
 </div>
 
 <div class="vc-book-card">
-<p class="vc-book-title">UFOs and the National Security State: 1941–1973</p>
-<p class="vc-book-author">Richard M. Dolan, 2002</p>
+  <div class="vc-book-cover">
+    <span class="vc-book-cover-title">UFOs and the National Security State: 1941–1973</span>
+    <span class="vc-book-cover-year">2002</span>
+  </div>
+  <p class="vc-book-author">Richard M. Dolan</p>
 </div>
 
 <div class="vc-book-card">
-<p class="vc-book-title">UFOs and the National Security State: 1973–1991</p>
-<p class="vc-book-author">Richard M. Dolan, 2009</p>
+  <div class="vc-book-cover">
+    <span class="vc-book-cover-title">UFOs and the National Security State: 1973–1991</span>
+    <span class="vc-book-cover-year">2009</span>
+  </div>
+  <p class="vc-book-author">Richard M. Dolan</p>
 </div>
 
 <div class="vc-book-card">
-<p class="vc-book-title">Sky People: Untold Stories of Alien Encounters in Mesoamerica</p>
-<p class="vc-book-author">Ardy Sixkiller Clarke, 2014</p>
+  <div class="vc-book-cover">
+    <span class="vc-book-cover-title">Sky People</span>
+    <span class="vc-book-cover-year">2014</span>
+  </div>
+  <p class="vc-book-author">Ardy Sixkiller Clarke</p>
 </div>
 
 <div class="vc-book-card">
-<p class="vc-book-title">American Cosmic: UFOs, Religion, Technology</p>
-<p class="vc-book-author">Diana Walsh Pasulka, 2019</p>
+  <div class="vc-book-cover">
+    <span class="vc-book-cover-title">American Cosmic</span>
+    <span class="vc-book-cover-year">2019</span>
+  </div>
+  <p class="vc-book-author">Diana Walsh Pasulka</p>
 </div>
 
 </div>

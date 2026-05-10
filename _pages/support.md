@@ -3,8 +3,7 @@ layout: page
 title: Support
 description: Support the work of The Visible College
 permalink: /support
-nav: true
-nav_order: 4
+nav: false
 ---
 
 The Visible College is an entirely volunteer initiative. Our members contribute their time, expertise, and institutional resources because they believe this work matters — and because they believe the moment for it has arrived.
