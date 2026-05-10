@@ -22,6 +22,7 @@ group :jekyll_plugins do
     gem 'unicode_utils'
     gem 'webrick'
     gem 'rouge', '4.4.0'
+    gem 'rake', '~> 13.0'
 end
 group :other_plugins do
     gem 'css_parser'
