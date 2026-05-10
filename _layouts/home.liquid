@@ -1,61 +1,32 @@
 ---
 layout: default
 ---
+
+{%- comment -%}
+  VC Brand Refresh — hero banner replaces the old logo/profile image block
+{%- endcomment -%}
+<div class="vc-hero" aria-label="Site hero">
+  <div class="vc-hero-inner">
+    <h1>A multidisciplinary collective of scholars and researchers focusing on anomalous phenomena</h1>
+  </div>
+</div>
+
 <div class="home post">
-  <header class="post-header">
-    <div class="homepage-logo-container" style="text-align: left; margin: 1rem 0;">
-      {% if site.logo_vertical %}
-        <img src="{{ site.logo_vertical | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }}" class="homepage-logo light-mode-logo" style="height: 200px; max-width: 300px;">
-      {% else %}
-        <img src="{{ site.logo | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }}" class="homepage-logo light-mode-logo" style="height: 200px; max-width: 600px;">
-      {% endif %}
-      {% if site.logo_vertical_dark %}
-        <img src="{{ site.logo_vertical_dark | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }} (Dark Mode)" class="homepage-logo dark-mode-logo" style="height: 200px; max-width: 300px; display: none;">
-      {% elsif site.logo_dark %}
-        <img src="{{ site.logo_dark | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }} (Dark Mode)" class="homepage-logo dark-mode-logo" style="height: 200px; max-width: 600px; display: none;">
-      {% endif %}
-    </div>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
-
   <article>
-    {% if page.profile %}
-      <div class="feature profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-      </div>
-    {% endif %}
-
-    <div class="clearfix">{{ content }}</div>
-
-    {% comment %} {% include profiles.liquid limit=false %} {% endcomment %}
+    {{ content }}
 
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
+      <hr class="vc-divider">
       <h4>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">Related <strong>news</strong></a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">Latest <strong>news</strong></a>
       </h4>
       {% include news.liquid limit=true %}
     {% endif %}
 
     <!-- Articles -->
     {% if site.articles_list.enabled %}
+      <hr class="vc-divider">
       <h4>
         <a href="{{ '/articles/' | relative_url }}" style="color: inherit">Featured <strong>articles</strong></a>
       </h4>
@@ -64,17 +35,19 @@ layout: default
 
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
+      <hr class="vc-divider">
+      <h4>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest <strong>posts</strong></a>
+      </h4>
       {% include latest_posts.liquid %}
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
+      <hr class="vc-divider">
+      <h4>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected <strong>publications</strong></a>
+      </h4>
       {% include selected_papers.liquid %}
     {% endif %}
 
@@ -82,7 +55,6 @@ layout: default
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
-
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
