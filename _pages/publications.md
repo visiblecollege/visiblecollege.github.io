@@ -38,32 +38,34 @@ We curate publications, articles, and key texts that inform the serious study of
 
 <li class="vc-pub-item">
 <p class="vc-pub-type">Humanities and Social Sciences Communications (Nature) &mdash; 2023</p>
-<h4>"Faculty Perceptions of Unidentified Aerial Phenomena"</h4>
-<p class="vc-pub-meta">Brown et al. &mdash; Humanities and Social Sciences Communications (Nature Publishing Group), 2023</p>
-<p>A peer-reviewed study examining how tenured and tenure-track faculty across 14 disciplines at 144 major research universities evaluate, explain, and respond to UAP — including their own experiences.</p>
+<h4>"Faculty perceptions of unidentified aerial phenomena"</h4>
+<p class="vc-pub-meta">Yingling, Yingling &amp; Bell &mdash; Humanities and Social Sciences Communications (Nature Portfolio), Vol. 10 (2023)</p>
+<p>A peer-reviewed survey of 1,460 tenured and tenure-track faculty across 14 disciplines at 144 major U.S. research universities, examining how they evaluate, explain, and respond to UAP. 19% reported that they or someone they know had witnessed UAP; 37% expressed interest in conducting research on the subject.</p>
 <a href="https://www.nature.com/articles/s41599-023-01746-3" class="vc-pub-link" target="_blank" rel="noopener">Read on Nature &rarr;</a>
 </li>
 
 <li class="vc-pub-item">
-<p class="vc-pub-type">Harvard Center for Astrophysics &mdash; 2023</p>
-<h4>"Physical Constraints on Unidentified Aerial Phenomena"</h4>
-<p class="vc-pub-meta">Loeb &amp; Kirkpatrick &mdash; Harvard University, 2023</p>
-<p>A physics-based analysis of the observational constraints on UAP behavior, authored by Harvard's Frank B. Baird Jr. Professor of Science. Examines which reported UAP characteristics are consistent with known physics and which require new explanations.</p>
-<a href="https://lweb.cfa.harvard.edu/~loeb/LK1.pdf" class="vc-pub-link" target="_blank" rel="noopener">Read PDF &rarr;</a>
+<p class="vc-pub-type">Progress in Aerospace Sciences &mdash; 2022</p>
+<h4>"Improved instrumental techniques, including isotopic analysis, applicable to the characterization of unusual materials with potential relevance to aerospace forensics"</h4>
+<p class="vc-pub-meta">Nolan, Vallée, Jiang &amp; Lemke &mdash; Progress in Aerospace Sciences, Vol. 128 (2022)</p>
+<p>A detailed materials and isotopic analysis of physical samples associated with two reported UAP incidents — Ubatuba, Brazil (1957) and Council Bluffs, Iowa (1977) — co-authored by Stanford pathologist Garry Nolan and computer scientist Jacques Vallée. One of the few peer-reviewed studies of alleged UAP-related physical evidence.</p>
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S0376042121000907" class="vc-pub-link" target="_blank" rel="noopener">Read on ScienceDirect &rarr;</a>
 </li>
 
 <li class="vc-pub-item">
-<p class="vc-pub-type">Progress in Aerospace Sciences &mdash; 2022</p>
-<h4>"Improved Instrumental Techniques, Including Advances in Nuclear Emission Analysis, Applied to the French Ubatuba Magnesium UFO Fragments"</h4>
-<p class="vc-pub-meta">Nolan, Vallée, et al. &mdash; Progress in Aerospace Sciences (2022)</p>
-<p>A detailed materials analysis of physical samples associated with UAP incidents, co-authored by Stanford pathologist Garry Nolan and computer scientist Jacques Vallée. One of the few peer-reviewed studies of alleged UAP-related physical evidence.</p>
+<p class="vc-pub-type">Scientific Reports (Nature) &mdash; 2021</p>
+<h4>"Exploring nine simultaneously occurring transients on April 12th 1950"</h4>
+<p class="vc-pub-meta">Villarroel et al. &mdash; Scientific Reports, Vol. 11, Article 12794 (2021)</p>
+<p>A peer-reviewed study of nine point sources of light that appeared simultaneously on a single Palomar Sky Survey photographic plate from April 12, 1950, with no counterparts on plates taken minutes before or after. The authors examine and weigh competing explanations, including the possibility that the transients may be reflections from objects in near-Earth orbit.</p>
+<a href="https://www.nature.com/articles/s41598-021-92162-7" class="vc-pub-link" target="_blank" rel="noopener">Read on Nature &rarr;</a>
 </li>
 
 <li class="vc-pub-item">
 <p class="vc-pub-type">The Astronomical Journal &mdash; 2020</p>
-<h4>"The Vanishing and Appearing Sources during a Century of Observations (VASCO) Project"</h4>
-<p class="vc-pub-meta">Villarroel et al. &mdash; The Astronomical Journal (2020)</p>
-<p>Discovery of multiple simultaneous astronomical transients across a century of photographic plate observations. The authors present the anomalous transients and consider possible explanations, including the presence of probes of non-terrestrial origin.</p>
+<h4>"The Vanishing and Appearing Sources during a Century of Observations Project. I. USNO Objects Missing in Modern Sky Surveys and Follow-up Observations of a 'Missing Star'"</h4>
+<p class="vc-pub-meta">Villarroel et al. &mdash; The Astronomical Journal, Vol. 159, Article 8 (2020)</p>
+<p>The first publication of the VASCO project, which compares historical sky-survey catalogs against modern surveys to identify sources that appear to have vanished. The authors search 600 million USNO B1.0 objects against Pan-STARRS DR1 to identify candidates for further astrophysical investigation.</p>
+<a href="https://ui.adsabs.harvard.edu/abs/2020AJ....159....8V/abstract" class="vc-pub-link" target="_blank" rel="noopener">Read on NASA ADS &rarr;</a>
 </li>
 
 </ul>
@@ -131,7 +133,7 @@ The following books provide essential context for the historical, scientific, an
 </div>
 
 <div class="vc-book-card">
-  <img class="vc-book-cover" src="https://covers.openlibrary.org/b/id/8730280-L.jpg" alt="Cover of UFOs: Generals, Pilots, and Government Officials Go on the Record by Leslie Kean" loading="lazy">
+  <img class="vc-book-cover" src="{{ '/assets/img/kean-ufos-generals.jpeg' | relative_url }}" alt="Cover of UFOs: Generals, Pilots, and Government Officials Go on the Record by Leslie Kean" loading="lazy">
   <p class="vc-book-title">UFOs: Generals, Pilots, and Government Officials Go on the Record</p>
   <p class="vc-book-author">Leslie Kean, 2010</p>
 </div>
