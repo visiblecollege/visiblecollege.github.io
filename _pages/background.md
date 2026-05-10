@@ -1,62 +1,119 @@
 ---
 layout: page
-title: Background
-description:
+title: Research
+description: Peer-reviewed papers, key texts, and scholarly resources on anomalous phenomena
 permalink: /background
 nav: true
-nav_order: 2
-
-social: true # includes social icons at the bottom of the page
+nav_order: 3
 ---
 
-The critical study of Unidentified Anomalous Phenomena (UAP) can be daunting, especially for newcomers. This is our attempt to get you up to speed on why we believe this subject area is worthy of serious scholarly attention.
+We curate and promote peer-reviewed research, scholarly articles, and key texts relevant to the serious study of anomalous phenomena. The following represents a selection of the most significant work currently available.
 
-There is compelling evidence that **[key figures in the U.S. government](#us-government-testimony)** are taking the UFO/UAP phenomenon very seriously, and that the U.S. government has been covering up information about UFOs and extraterrestrial life for decades. This has led to **[several pieces of legislation and official reports](#legislation-and-reports)** that increasingly support these extraordinary claims. Furthermore, there is direct **[scientific evidence](#scientific-evidence)** from civilian and military sources that confirm the reality of UAP. Finally, there is significant **[historical evidence](#historical-background)** that UAP have been observed not only beginning in the 20th century, but all through human history.
+---
 
-### US Government Testimony
+## Peer-Reviewed Papers
 
-<p>{% include youtube.liquid url="https://www.youtube.com/watch?v=2OMGOvuJV5M" %}</p>
+<ul class="vc-pub-list">
 
-**[Luis Elizondo](https://youtu.be/2OMGOvuJV5M)** first came into the public eye through a [New York Times article in 2017](https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html) that revealed the existence of the [Advanced Aerospace Threat Identification Program (AATIP)](https://en.wikipedia.org/wiki/Advanced_Aerospace_Threat_Identification_Program) and [provided three videos of UAP](https://www.youtube.com/watch?v=ZBtMbBPzqHY) shot by Navy pilots. Elizondo claims that Non-Human Intelligences (NHI) regularly send technological craft into controlled US airspace and engage military resources, as has previously been alleged by **[Lieutenant Bob Jacobs and Lieutenant Robert Salas](https://www.military.com/daily-news/2021/10/19/air-force-veterans-who-are-ufo-true-believers-return-newly-attentive-washington.html)**. Elizondo confirms the story told by **[Lieutenant Colonel Jesse Marcel](https://en.wikipedia.org/wiki/Jesse_Marcel)** about the [reality of the crash at Roswell in 1947](https://www.youtube.com/watch?v=pJHYiJAHOtY) and that the US government is in posession of recovered materials from that and other incidents. In other recent interviews, Elizondo claims that the Department of Defense is in posession of [hundreds of high-resolution videos of UAP](https://youtu.be/9gLPtRwXgCM?si=s9p4c32wdPiG8pJm&t=1375) making it clear they are advanced technological craft,  and that [he has seen the video](https://www.youtube.com/live/DOeB_sPjyMA?si=KyQJYddJ-ibdC4bC&t=780) allegedly recorded by Bob Jacobs in 1964 in [which a flying saucer destroys a missile in mid-flight](https://www.the-sun.com/news/us-news/3887488/ufo-firing-four-beams-light-nuclear-missile-aliens/). Elizondo claims [he has held a technological implant](https://youtu.be/wgM5V44eQHU?si=um9fmmTKgFVvnQPk&t=698) removed from a US service member. Though the Department of Defense has sometimes denied Elizondo's role in AATIP, [recent FOIA documents](https://documents2.theblackvault.com/documents/dod/21-FR-0964.pdf) have [confirmed his role in the program](https://www.theblackvault.com/documentarchive/aatip-memo-unveiled-after-foia-battle-dod-inconsistencies-exposed/#google_vignette). Elizondo has recently been giving clearance by the Department of Defense to publish [a book about his experiences in AATIP](https://www.amazon.com/Imminent-Pentagons-Investigating-UAPs_Featured-Experience/dp/0063235560).
+<li class="vc-pub-item">
+<p class="vc-pub-type">The Visible College &mdash; 2025</p>
+<h4>"Down the UAP Rabbit Hole"</h4>
+<p class="vc-pub-meta">Tania Searle &mdash; The Visible College, March 2025</p>
+<p>An account of how academically trained members of The Visible College have engaged with anomalous phenomena — documenting the journey from skepticism to serious investigation, the experience of ontological disruption, and the value of scholarly community.</p>
+<a href="https://thevisiblecollege.org/articles/down_the_uap_rabbit_hole/" class="vc-pub-link" target="_blank" rel="noopener">Read article &rarr;</a>
+</li>
 
-**[David Grusch](https://en.wikipedia.org/wiki/David_Grusch_UFO_whistleblower_claims)** made public similarly extraordinary claims in the summer of 2023. In particular, he alleged that the [US government has been running a secret UFO recovery program](https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/) since at least the 1940s and that multiple craft and "biologics" have been successfully recovered. Grusch's credentials as a highly cleared intelligence officer who had access to the kind of information that would be required confirm these claims have been thoroughly fact checked [[1](https://thedebrief.org/fact-check-q-a-with-debrief-co-founder-and-investigator-tim-mcmillan-part-1/), [2](https://thedebrief.org/fact-check-q-a-with-debrief-co-founder-and-investigator-tim-mcmillan-part-2/), [3](https://thedebrief.org/fact-check-q-a-with-debrief-co-founder-and-professional-investigator-tim-mcmillan-part-3/)]. Before going public, Grusch provided extensive classified information in a whistleblower complaint to **[Thomas Monheim, Inspector General of the Intelligence Community](https://en.wikipedia.org/wiki/Thomas_Monheim)**. Monheim reportedly stated that Grusch's claims are "credible and urgent". Grusch and two Navy pilots, **[Lieutenant Ryan Graves](https://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-Bio-GravesR-20230726.pdf)** and **[Commander David Fravor](https://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-Bio-FravorD-20230726.pdf)**, testified under oath on these matters before the [House Oversight Committee on July 26, 2023](https://www.youtube.com/live/KQ7Dw-739VY?si=-fgKtPE3fYwM4kiT). On January 12, 2024, Monheim briefed members of that committee in a sensitive compartmented information facility (SCIF) and those members have publically stated that [Grusch's claims are being taken very seriously](https://youtu.be/uCAe5N_CDO0?si=0zKmaFyuKaQQjMtm).
+<li class="vc-pub-item">
+<p class="vc-pub-type">Journal of Astronomical Instrumentation &mdash; 2023</p>
+<h4>"The Scientific Investigation of Unidentified Aerial Phenomena (UAP) Using Multimodal Ground-Based Observatories"</h4>
+<p class="vc-pub-meta">Watters, Knuth, et al. &mdash; Journal of Astronomical Instrumentation, Vol. 12, No. 1 (2023)</p>
+<p>A major peer-reviewed paper co-authored by 38 researchers arguing for systematic, instrumented scientific investigation of UAP. Notes that "UAP have resisted explanation and received little formal scientific attention for 75 years."</p>
+<a href="https://arxiv.org/abs/2305.18566" class="vc-pub-link" target="_blank" rel="noopener">Read on arXiv &rarr;</a>
+</li>
 
-Elizondo and Grusch are not alone in their claims. **[Colonel Karl Nell](https://www.salt.org/speakers/karl-nell)** has stated in no-uncertain terms that [Non-Human Intelligences have been interacting with humanity](https://x.com/SALTConference/status/1793723843321692305?lang=en) and this has been ongoing for quite some time. **[Christopher Mellon, Deputy Assistant Secretary of Defense for Intelligence](https://en.wikipedia.org/wiki/Christopher_Mellon)** under Presidents Bill Clinton and George W Bush, has been a close ally of Elizondo since at least 2017. Mellon has [advocated strongly for UAP disclosure](https://www.politico.com/news/magazine/2023/06/03/ufo-crash-materials-intelligence-00100077) and has offered compelling reasons [why the secret might have been kept from the public](https://youtu.be/nifLdoJYamQ?si=a142l785lFdHgJ5M) in the interest of political stability. **[Rear Admiral Tim Gallaudet, Administrator of the National Oceanic and Atmospheric Administration (NOAA)](https://en.wikipedia.org/wiki/Timothy_Gallaudet)** under President Donald Trump, has not only [confirmed the claims made by David Grusch](https://www.newsnationnow.com/space/ufo/navy-officer-supports-ufo-claims/), but has gone further to claim that [similarly anomalous objects have being detected underwater](https://www.nbcnews.com/now/video/navy-rear-admiral-speaks-out-about-uap-sightings-in-new-paper-211902021618) on a regular basis. **[General H.R. McMaster, National Security Advisor](https://en.wikipedia.org/wiki/H._R._McMaster)** to President Trump, [confirms that there are phenomena in the sky that are inexplicable by current science](https://www.instagram.com/dancleary79/reel/C_mb6-jJx8q/).
+<li class="vc-pub-item">
+<p class="vc-pub-type">Humanities and Social Sciences Communications (Nature) &mdash; 2023</p>
+<h4>"Faculty Perceptions of Unidentified Aerial Phenomena"</h4>
+<p class="vc-pub-meta">Brown et al. &mdash; Humanities and Social Sciences Communications (Nature Publishing Group), 2023</p>
+<p>A peer-reviewed study examining how tenured and tenure-track faculty across 14 disciplines at 144 major research universities evaluate, explain, and respond to UAP — including their own experiences.</p>
+<a href="https://www.nature.com/articles/s41599-023-01746-3" class="vc-pub-link" target="_blank" rel="noopener">Read on Nature &rarr;</a>
+</li>
 
-Though they have not been quite so bold as the people mentioned above, **[President Barack Obama](https://youtu.be/xp6Ph5iTIgc?si=3AEkXW_CD40_sdJD&t=43)** has confirmed that [UAP are real objects that behave in ways we cannot explain](https://youtu.be/xp6Ph5iTIgc?si=3AEkXW_CD40_sdJD&t=43) and **[President Donald Trump](https://www.youtube.com/watch?v=tNGBB52inSk&t=2019s)** has stated he was briefed by [Air Force F-22 pilots who engaged a round object that significantly outpaced them](https://www.youtube.com/watch?v=tNGBB52inSk&t=2019s). **[Vice President Kamala Harris](https://youtu.be/Ne3-KA8ja6g?si=kF8n94jiBt485neD&t=658)** has conspicuously [dodged direct questions on the topic](https://youtu.be/Ne3-KA8ja6g?si=kF8n94jiBt485neD&t=658).
+<li class="vc-pub-item">
+<p class="vc-pub-type">Harvard Center for Astrophysics &mdash; 2023</p>
+<h4>"Physical Constraints on Unidentified Aerial Phenomena"</h4>
+<p class="vc-pub-meta">Loeb &amp; Kirkpatrick &mdash; Harvard University, 2023</p>
+<p>A physics-based analysis of the observational constraints on UAP behavior, authored by Harvard's Frank B. Baird Jr. Professor of Science. Examines which reported UAP characteristics are consistent with known physics and which require new explanations.</p>
+<a href="https://lweb.cfa.harvard.edu/~loeb/LK1.pdf" class="vc-pub-link" target="_blank" rel="noopener">Read PDF &rarr;</a>
+</li>
 
+<li class="vc-pub-item">
+<p class="vc-pub-type">Progress in Aerospace Sciences &mdash; 2022</p>
+<h4>"Improved Instrumental Techniques, Including Advances in Nuclear Emission Analysis, Applied to the French Ubatuba Magnesium UFO Fragments"</h4>
+<p class="vc-pub-meta">Nolan, Vallée, et al. &mdash; Progress in Aerospace Sciences (2022)</p>
+<p>A detailed materials analysis of physical samples associated with UAP incidents, co-authored by Stanford pathologist Garry Nolan and computer scientist Jacques Vallée. One of the few peer-reviewed studies of alleged UAP-related physical evidence.</p>
+</li>
 
-#### Legislation and Reports
+<li class="vc-pub-item">
+<p class="vc-pub-type">The Astronomical Journal &mdash; 2020</p>
+<h4>"The Vanishing and Appearing Sources during a Century of Observations (VASCO) Project"</h4>
+<p class="vc-pub-meta">Villarroel et al. &mdash; The Astronomical Journal (2020)</p>
+<p>Discovery of multiple simultaneous astronomical transients across a century of photographic plate observations. The authors present the anomalous transients and consider possible explanations, including the presence of probes of non-terrestrial origin.</p>
+</li>
 
-<p>{% include youtube.liquid url="https://youtu.be/Z8a0P617nqw?si=G4N7e7Ho2nVxu52E" %}</p>
+</ul>
 
-All by itself, [The UAP Disclosure Act of 2023](https://www.democrats.senate.gov/imo/media/doc/uap_amendment.pdf) is sufficient reason for serious scholars to take UAP seriously. **[Chuck Schumer (D-NY), Senate Majority Leader](https://en.wikipedia.org/wiki/Chuck_Schumer)**, and **[Mike Rounds (R-SD)](https://en.wikipedia.org/wiki/Mike_Rounds)**, together with **[Marco Rubio (R-FL), Vice Chair of the Senate Intelligence Committee](https://en.wikipedia.org/wiki/Marco_Rubio)**, **[Kirsten Gillibrand (D-NY)](https://en.wikipedia.org/wiki/Kirsten_Gillibrand)**, **[Martin Heinrich (D-NM)](https://en.wikipedia.org/wiki/Martin_Heinrich)**, and **[Ted Young (R-IN)](https://en.wikipedia.org/wiki/Todd_Young)** proposed and succesfully passed a Senate amendment to the National Defence Authorization Act for 2024 that calls for mandatory, government-wide UAP records collection at the National Archives, a Presidentially appointed Review Board to survey those records and plan for responsible public disclosure, as well as ["eminent domain over any and all recovered technologies of unknown origin and biological evidence of non-human intelligence that may be controlled by private persons or entities in the interests of the public good"](https://www.democrats.senate.gov/imo/media/doc/uap_amendment.pdf). Everything about this amendment will be shocking to those unaware of the seriousness of this issue. Among other things, it gives careful legal definitions for all of the following concepts: UNIDENTIFIED ANOMALOUS PHENOMENA, NON-HUMAN INTELLIGENCE, TECHNOLOGIES OF UNKNOWN ORIGIN, CONTROLLED DISCLOSURE CAMPAIGN PLAN, and LEGACY PROGRAM.
+---
 
-Although the language of the amendment makes it very clear that it would have no effect whatsoever unless such recovered technologies and biological evidence existed, the amendment was stripped down in the House of Representatives. In particular, the review board and the eminent domain clause were removed, leaving only a less-enforceable version of the UAP records collection mandate. The parties most responsible for killing the amendment in the House were **[Mike Turner (R-OH-10), Chair of the House Intelligence Committee](https://en.wikipedia.org/wiki/Mike_Turner)** and **[Mike Rogers (R-AL-03), Chair of the House Armed Services Committee](https://en.wikipedia.org/wiki/Mike_Rogers_(Alabama_politician))**. This opposition to the Senate's efforts to improve congressional oversight for UAP related programs provides further evidence that something substantial is being hidden from the public.
+## Key Texts
 
-The UAP Disclosure Act did not come out of thin air. It represents only the most recent attempt by influential members of Congress to promote responsible public disclosure of whatever UAP-related information the US Government possesses. In 2007, Senators **[Harry Reid (D-NV), Former Senate Majority Leader](https://en.wikipedia.org/wiki/Harry_Reid)**, **[Ted Stevens (R-AK), President Pro Tempore of the Senate](https://en.wikipedia.org/wiki/Ted_Stevens)**, and **[Daniel Inouye (D-HI), President Pro Tempore of the Senate](https://en.wikipedia.org/wiki/Daniel_Inouye)** created the [Advanced Aerospace Threat Identification Program (AATIP)](https://en.wikipedia.org/wiki/Advanced_Aerospace_Threat_Identification_Program) to study UAP. AATIP was succeeded by the UAP Task Force (UAPTF), the group responsible for the [UAP Report published by the Office of the Director of National Intelligence](https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf) in 2021. At the time of that report, there were 144 unexplained cases that could not be explained as "airborne clutter, natural atmospheric phenomena, USG or U.S. industry developmental programs, foreign adversary systems". 80 of these unexplained cases were observed with multiple sensors, and in at least 18 incidents the objects were described to demonstrate "Advanced Technology".
+The following books provide essential context for understanding the historical, scientific, and sociological dimensions of anomalous phenomena research.
 
-THe UAP Task Force was succeeded in 2022 by the [All-domain Anomaly Resolution Office (AARO)](https://en.wikipedia.org/wiki/All-domain_Anomaly_Resolution_Office). AARO issued [Volume 1 of its Report on the Historical Record of U.S. Government Involvement with Unidentified Anomalous Phenomena](https://media.defense.gov/2024/Mar/08/2003409233/-1/-1/0/DOPSR-CLEARED-508-COMPLIANT-HRRV1-08-MAR-2024-FINAL.PDF) in February 2024. The report concluded as follows: "To date, AARO has not discovered any empirical evidence that any sighting of a UAP represented off-world technology or the existence a classified program that had not been properly reported to Congress." However, this report has come under [heavy criticism by Christopher Mellon](https://thedebrief.org/the-pentagons-new-uap-report-is-seriously-flawed/) and others for its lack of engagement with any of the most compelling cases and the inclusion of many errors.
+<div class="vc-book-grid">
 
+<div class="vc-book-card">
+<p class="vc-book-title">The Report on Unidentified Flying Objects</p>
+<p class="vc-book-author">Edward J. Ruppelt, 1956</p>
+</div>
 
-#### Scientific Evidence
+<div class="vc-book-card">
+<p class="vc-book-title">Passport to Magonia: From Folklore to Flying Saucers</p>
+<p class="vc-book-author">Jacques Vallée, 1969</p>
+</div>
 
-<p>{% include youtube.liquid url="https://www.youtube.com/watch?v=TTtlgDB3Lts" %}</p>
+<div class="vc-book-card">
+<p class="vc-book-title">The UFO Experience</p>
+<p class="vc-book-author">J. Allen Hynek, 1972</p>
+</div>
 
-The alleged discovery of NHI presence on Earth should not be suprising to us. After all, [Enrico Fermi](https://en.wikipedia.org/wiki/Enrico_Fermi) long ago gave [a compelling argument that Earth should have already been visited by extraterrestrial civilizations](https://en.wikipedia.org/wiki/Fermi_paradox). That being said, it is often assumeed that there is no direct scientific evidence for the existence of UAP as physical objects that demonstrate advanced technological capacities. This is simply not true.
+<div class="vc-book-card">
+<p class="vc-book-title">The Invisible College</p>
+<p class="vc-book-author">Jacques Vallée, 1975</p>
+</div>
 
-**[Kevin Knuth, Professor of Physics at the University at Albany](https://www.albany.edu/physics/faculty/kevin-knuth)** has argued compellingly that [UAP are interstellar spacecraft based on their observed behavior](https://www.youtube.com/watch?v=TTtlgDB3Lts).
+<div class="vc-book-card">
+<p class="vc-book-title">The Hynek UFO Report</p>
+<p class="vc-book-author">J. Allen Hynek, 1977</p>
+</div>
 
-**[Garry Nolan, Rachford and Carlota A. Harris Professor Endowed Chair in the Department of Pathology at Stanford University School of Medicine](https://orcid.org/0000-0002-8862-9043)** together with **[Jacques Vallée](https://en.wikipedia.org/wiki/Jacques_Vall%C3%A9e)**, **[Sizun Jiang, Assistant Professor at Harvard Medical School](https://orcid.org/0000-0001-6149-3142)**, and **[Larry Lemke, NASA Ames Research Center](https://www.scopus.com/authid/detail.uri?authorId=7003309817)** have published [detailed materials analysis](https://www.sciencedirect.com/science/article/pii/S0376042121000907) of samples recovered from the [Council Bluffs case](https://www.savannahnow.com/story/lifestyle/2011/02/09/offutt-mass-molten-metal-leaves/45409349007/). Dr. Nolan has presented additional material analyses of UAP-related samples in [his presentation at the 2023 Sol Foundation Conference](https://youtu.be/7UW1jyN2o8A?si=yV6RlpJy_TOVl43x).
+<div class="vc-book-card">
+<p class="vc-book-title">UFOs and the National Security State: 1941–1973</p>
+<p class="vc-book-author">Richard M. Dolan, 2002</p>
+</div>
 
-**[Beatriz Villarroel, Assistant Professor at the Nordic Institute of Theoretical Physics](https://scholar.google.co.uk/scholar?as_q=&num=10&btnG=Search+Scholar&as_epq=&as_oq=&as_eq=&as_occt=any&as_sauthors=%22Beatriz%20Villarroel%22&as_publication=&as_ylo=&as_yhi=&as_allsubj=all&hl=en)** and her coauthors have published their discovery of [multiple simulataneous astronomical transients](https://www.nature.com/articles/s41598-021-92162-7) in *Nature*, arguably the most prestigious scientific journal in the world. Dr. Villarroel argues that [the most plausible interpretation of these transients is that they are extra terrestrial probes](https://youtu.be/njNP8ypUbDM?si=6vPCqAGxE042579-).
+<div class="vc-book-card">
+<p class="vc-book-title">UFOs and the National Security State: 1973–1991</p>
+<p class="vc-book-author">Richard M. Dolan, 2009</p>
+</div>
 
-#### Historical Evidence
+<div class="vc-book-card">
+<p class="vc-book-title">Sky People: Untold Stories of Alien Encounters in Mesoamerica</p>
+<p class="vc-book-author">Ardy Sixkiller Clarke, 2014</p>
+</div>
 
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/APJJA4DneO8?si=viilG4Eh3ypSNjy6&amp;start=670" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+<div class="vc-book-card">
+<p class="vc-book-title">American Cosmic: UFOs, Religion, Technology</p>
+<p class="vc-book-author">Diana Walsh Pasulka, 2019</p>
+</div>
 
-So much has been written about the history of UAP in both recent and ancient times, that it is impossible to briefly summarize all of it. We recommend in particular that scholars new to the subject focus on the work of Jacques Vallee, Richard Dolan, Diana Pasulka, Ardy Sixkiller Clarke, J. Allen Hynek, and Edward Ruppelt.
-
-<div class="publications">
-    {% bibliography --sort_by year --order ascending --group_by none --query @*[tags~=\|onboarding\|] %}
 </div>

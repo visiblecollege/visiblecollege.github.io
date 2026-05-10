@@ -6,31 +6,36 @@ subtitle:
 
 profile:
   align: right
-  image: navy-1952.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: Photo by US Coast Guard photographer Shell R. Alpert (1952), via <i>U-2s, UFOs, and Project Blue Book</i> &middot; <a href='https://www.history.navy.mil/browse-by-topic/disasters-and-phenomena/u2s-ufos-and-operation-blue-book.html'>www.history.navy.mil</a>
+  image:
+  image_circular: false
 
-news: true # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+news: true
+selected_papers: false
+social: true
 ---
 
-We are a volunteer group of scholars conducting and promoting serious research into Unidentified Anomalous Phenomena (UAP) and related topics.
+<div class="vc-highlight">
+  <span class="vc-label">Open Letter &mdash; May 2026</span>
+  <h3>A Statement from The Visible College</h3>
+  <p>The Visible College has published an open letter calling for rigorous, transparent, and interdisciplinary scientific inquiry into anomalous phenomena. We invite scholars, researchers, and the public to read and engage with our statement.</p>
 
-Our work has been underway at various levels for some time now, but we have just begun to work together publicly.
+  <!-- PDF EMBED — replace the placeholder below with your PDF once it is ready.
+       Option A (embed):  <iframe src="/assets/pdf/open-letter.pdf" width="100%" height="560" style="border:none;border-radius:3px;"></iframe>
+       Option B (link):   <a href="/assets/pdf/open-letter.pdf" class="vc-btn" target="_blank">Read the Open Letter (PDF)</a>
+  -->
+  <div class="vc-pdf-placeholder">
+    <div class="vc-pdf-icon">PDF</div>
+    <p style="margin:0; font-size:0.9rem;">Open letter forthcoming.<br>
+    To embed: place your PDF at <code>assets/pdf/open-letter.pdf</code> and replace this block with the iframe above.</p>
+  </div>
+</div>
 
 #### Our **mission**
 
-Our goal is to produce, collaborate on, curate, and share high quality research and educational materials that enable other researchers, policymakers, and the public to better understand this complex topic.
+We are a volunteer group of scholars conducting and promoting serious research into edge phenomena — anomalous events and experiences that resist conventional explanation and have received insufficient formal academic attention.
 
-We do not advocate for any particular conclusions, nor do we make any claims to exclusive knowledge or authority. Our group is bound only by our common commitment to open-minded, rigorous inquiry, and by our belief that the best way to make progress is to work together, in the open.
+Our goal is to produce, collaborate on, curate, and share high-quality research and educational materials that enable other researchers, policymakers, and the public to better understand this complex topic.
 
-Visit the **[About](/about)** page for more.
+We do not advocate for any particular conclusions, nor do we claim exclusive knowledge or authority. Our work is grounded in a common commitment to open-minded, rigorous inquiry — and in the belief that the best way to make progress is to work together, in the open.
 
-<!-- #### Our **projects**
-
-The Visible College is leading and contributing to a variety of research projects and educational events across the global academic community. We will share more details in months to come, but some basic outlines of current work in progress can be found on our **[Projects](/projects)** page.
-
-#### Our **people**
-
-We are compiling a list of scholars and other subject matter experts (including but not limited to members of The Visible College) doing serious work in UAP studies and adjacent fields. Visit the **[People](/people)** page for more information. -->
+Visit the [About](/about) page for more on our history and background, or [People](/people) to meet our members.
