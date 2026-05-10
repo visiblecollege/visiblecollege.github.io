@@ -1,109 +1,384 @@
-// Custom styles
+// ============================================================
+// THE VISIBLE COLLEGE — Brand Overrides
+// Brand blue: #0018e9  |  Navy: #0a0839
+// Fonts: Outfit (headings), Plus Jakarta Sans (body)
+// ============================================================
 
-// Article author and date styling
-.post-author,
-.post-date,
-.post-updated {
-  margin-bottom: 0.5rem;
+// Google Fonts — must be first rule in compiled output
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+// ============================================================
+// THEME COLOR OVERRIDE
+// ============================================================
+:root {
+  --global-theme-color: #0018e9;
+  --global-hover-color: #0018e9;
 }
 
-.post-author {
-  font-size: 1.1rem;
-  margin-top: 1rem;
+// ============================================================
+// TYPOGRAPHY
+// ============================================================
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', system-ui, sans-serif;
+}
+
+// ============================================================
+// NAVBAR
+// ============================================================
+.navbar {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid rgba(10, 8, 57, 0.09);
+  box-shadow: none !important;
+}
+
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  color: #0a0839 !important;
+}
+
+.navbar .nav-link {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #0018e9 !important;
+}
+
+// ============================================================
+// HERO BANNER
+// ============================================================
+.vc-hero {
+  background: #0018e9;
+  position: relative;
+  overflow: hidden;
+  padding: 72px 32px;
+  // Break out of Bootstrap container
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: -1rem;
+  text-align: center;
+}
+
+.vc-hero::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -5%;
+  width: 55%;
+  height: 200%;
+  background: #0a0839;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  opacity: 0.38;
+}
+
+.vc-hero::after {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: 15%;
+  width: 28%;
+  height: 150%;
+  background: #0a0839;
+  clip-path: polygon(65% 0%, 100% 0%, 35% 100%, 0% 100%);
+  opacity: 0.18;
+}
+
+.vc-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.vc-hero h1 {
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(1.55rem, 3.2vw, 2.3rem);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+
+// ============================================================
+// HOMEPAGE — hide large logo block (hero replaces it)
+// ============================================================
+.homepage-logo-container {
+  display: none;
+}
+
+// ============================================================
+// OPEN LETTER HIGHLIGHT BLOCK
+// ============================================================
+.vc-highlight {
+  border-left: 4px solid #0018e9;
+  padding: 28px 36px;
+  background: #ffffff;
+  box-shadow: 0 2px 24px rgba(0, 24, 233, 0.07);
+  border-radius: 2px;
+  margin: 2rem 0 2.5rem;
+}
+
+.vc-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #0018e9;
+  margin-bottom: 10px;
+}
+
+.vc-highlight h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.4rem;
+  color: #0a0839;
+  margin-bottom: 10px;
+}
+
+.vc-highlight p {
+  color: rgba(10, 8, 57, 0.68);
+  margin-bottom: 14px;
+}
+
+// ============================================================
+// PDF PLACEHOLDER
+// ============================================================
+.vc-pdf-placeholder {
+  background: #eeeef5;
+  border: 1px solid rgba(10, 8, 57, 0.1);
+  border-radius: 4px;
+  padding: 48px 24px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgba(10, 8, 57, 0.5);
+}
+
+.vc-pdf-icon {
+  display: inline-block;
+  background: #0018e9;
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding: 7px 13px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+}
+
+// ============================================================
+// BUTTONS
+// ============================================================
+.vc-btn {
+  display: inline-block;
+  background: #0018e9;
+  color: #ffffff !important;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 11px 26px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none !important;
+  transition: opacity 0.15s;
+  margin-top: 8px;
+}
+
+.vc-btn:hover {
+  opacity: 0.84;
+}
+
+.vc-btn-outline {
+  background: transparent !important;
+  border: 2px solid #0018e9;
+  color: #0018e9 !important;
+}
+
+// ============================================================
+// SECTION DIVIDERS
+// ============================================================
+.vc-divider {
+  border: none;
+  border-top: 1px solid rgba(10, 8, 57, 0.1);
+  margin: 2.5rem 0;
+}
+
+// ============================================================
+// ARTICLE / POST LIST (preserve existing + improve)
+// ============================================================
+.post-meta .author-name {
+  font-size: 1.05rem;
   color: var(--global-text-color);
 }
 
-.post-date,
-.post-updated {
-  color: var(--global-text-color-light);
+.post-meta .post-date {
   font-size: 0.875rem;
+  color: var(--global-text-color-light);
 }
 
-// Articles list styling
 .article-list-item {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+  padding: 0.8rem 0;
   border-bottom: 1px solid var(--global-divider-color);
 }
 
-.article-list-item p {
+.article-list-item a.title {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.article-list-item a.title:hover {
+  color: #0018e9;
+}
+
+html[data-theme="dark"] .article-list-item a.title:hover {
+  color: #fdd011;
+}
+
+.post-meta .author { font-style: italic; font-size: 0.9rem; }
+.post-meta .summary { font-size: 0.9rem; }
+
+// ============================================================
+// PUBLICATION / RESEARCH LIST
+// ============================================================
+.vc-pub-list {
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
-.article-title {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: var(--global-text-color);
-  text-decoration: none;
+.vc-pub-item {
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(10, 8, 57, 0.1);
 }
 
-.article-title:hover {
-  color: var(--global-theme-color);
+.vc-pub-item:last-child {
+  border-bottom: none;
 }
 
-.article-author {
-  font-style: italic;
-  font-size: 0.9rem;
-  color: var(--global-text-color);
-  margin-top: 0.2rem;
+.vc-pub-type {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #0018e9;
+  margin-bottom: 5px;
 }
 
-.article-summary {
-  font-size: 0.9rem;
-  color: var(--global-text-color);
-  margin-top: 0.2rem;
+.vc-pub-item h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0a0839;
+  margin-bottom: 4px;
+  line-height: 1.45;
 }
 
-.article-date {
+.vc-pub-meta {
+  font-size: 0.875rem;
+  color: rgba(10, 8, 57, 0.6);
+  margin-bottom: 8px;
+}
+
+.vc-pub-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0018e9;
+}
+
+// ============================================================
+// BOOK GRID
+// ============================================================
+.vc-book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.vc-book-card {
+  border: 1px solid rgba(10, 8, 57, 0.1);
+  border-radius: 4px;
+  padding: 18px;
+  background: #ffffff;
+}
+
+.vc-book-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #0a0839;
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+.vc-book-author {
   font-size: 0.8rem;
-  color: var(--global-text-color-light);
-  margin-top: 0.2rem;
+  color: rgba(10, 8, 57, 0.55);
 }
 
-.articles .mt-3 a {
-  color: var(--global-theme-color);
-  font-size: 0.9rem;
+// ============================================================
+// DARK MODE LOGOS
+// ============================================================
+.dark-mode-logo { display: none; }
+html[data-theme="dark"] .light-mode-logo { display: none; }
+html[data-theme="dark"] .dark-mode-logo { display: block; }
+
+// ============================================================
+// FOOTER
+// ============================================================
+footer.sticky-bottom,
+footer.fixed-bottom {
+  background-color: #0a0839 !important;
+  color: rgba(255, 255, 255, 0.6);
+  border-top: none;
 }
 
-// Dark mode logo switching
-.dark-mode-logo {
-  display: none;
+footer.sticky-bottom p,
+footer.fixed-bottom p {
+  color: rgba(255, 255, 255, 0.6);
 }
 
-// When dark mode is active, hide light mode logos and show dark mode logos
-html[data-theme="dark"] .light-mode-logo {
-  display: none;
+footer.sticky-bottom a,
+footer.fixed-bottom a {
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 
-html[data-theme="dark"] .dark-mode-logo {
-  display: inline-block;
+footer.sticky-bottom a:hover,
+footer.fixed-bottom a:hover {
+  color: #ffffff !important;
 }
 
-// Force link colors with maximum specificity
-a, 
-a:link, 
-a:visited, 
-a:hover, 
-a:active,
-.nav-link, 
-.navbar-brand, 
-.post-title a, 
-.article-title,
-.btn,
-.btn-primary {
-  color: #0000e4 !important;
+// ============================================================
+// RESPONSIVE
+// ============================================================
+@media (max-width: 768px) {
+  .vc-hero {
+    padding: 52px 20px;
+  }
+
+  .vc-highlight {
+    padding: 22px 22px;
+  }
+
+  .vc-book-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-html[data-theme="dark"] a, 
-html[data-theme="dark"] a:link, 
-html[data-theme="dark"] a:visited, 
-html[data-theme="dark"] a:hover, 
-html[data-theme="dark"] a:active,
-html[data-theme="dark"] .nav-link, 
-html[data-theme="dark"] .navbar-brand, 
-html[data-theme="dark"] .post-title a, 
-html[data-theme="dark"] .article-title,
-html[data-theme="dark"] .btn,
-html[data-theme="dark"] .btn-primary {
-  color: #fdd011 !important;
+@media (max-width: 480px) {
+  .vc-book-grid {
+    grid-template-columns: 1fr;
+  }
 }
