@@ -77,75 +77,57 @@ The following books provide essential context for the historical, scientific, an
 <div class="vc-book-grid">
 
 <div class="vc-book-card">
-  <div class="vc-book-cover">
-    <span class="vc-book-cover-title">The Report on Unidentified Flying Objects</span>
-    <span class="vc-book-cover-year">1956</span>
-  </div>
-  <p class="vc-book-author">Edward J. Ruppelt</p>
+  <img class="vc-book-cover" src="https://covers.openlibrary.org/b/id/1861314-L.jpg" alt="Cover of The Report on Unidentified Flying Objects by Edward J. Ruppelt" loading="lazy">
+  <p class="vc-book-title">The Report on Unidentified Flying Objects</p>
+  <p class="vc-book-author">Edward J. Ruppelt, 1956</p>
 </div>
 
 <div class="vc-book-card">
-  <div class="vc-book-cover">
-    <span class="vc-book-cover-title">Passport to Magonia</span>
-    <span class="vc-book-cover-year">1969</span>
-  </div>
-  <p class="vc-book-author">Jacques Vallée</p>
+  <img class="vc-book-cover" src="https://covers.openlibrary.org/b/id/594147-L.jpg" alt="Cover of Passport to Magonia by Jacques Vallée" loading="lazy">
+  <p class="vc-book-title">Passport to Magonia</p>
+  <p class="vc-book-author">Jacques Vallée, 1969</p>
 </div>
 
 <div class="vc-book-card">
-  <div class="vc-book-cover">
-    <span class="vc-book-cover-title">The UFO Experience</span>
-    <span class="vc-book-cover-year">1972</span>
-  </div>
-  <p class="vc-book-author">J. Allen Hynek</p>
+  <img class="vc-book-cover" src="https://covers.openlibrary.org/b/id/813341-L.jpg" alt="Cover of The UFO Experience by J. Allen Hynek" loading="lazy">
+  <p class="vc-book-title">The UFO Experience</p>
+  <p class="vc-book-author">J. Allen Hynek, 1972</p>
 </div>
 
 <div class="vc-book-card">
-  <div class="vc-book-cover">
-    <span class="vc-book-cover-title">The Invisible College</span>
-    <span class="vc-book-cover-year">1975</span>
-  </div>
-  <p class="vc-book-author">Jacques Vallée</p>
+  <img class="vc-book-cover" src="https://covers.openlibrary.org/b/id/4482234-L.jpg" alt="Cover of The Invisible College by Jacques Vallée" loading="lazy">
+  <p class="vc-book-title">The Invisible College</p>
+  <p class="vc-book-author">Jacques Vallée, 1975</p>
 </div>
 
 <div class="vc-book-card">
-  <div class="vc-book-cover">
-    <span class="vc-book-cover-title">The Hynek UFO Report</span>
-    <span class="vc-book-cover-year">1977</span>
-  </div>
-  <p class="vc-book-author">J. Allen Hynek</p>
+  <img class="vc-book-cover" src="https://covers.openlibrary.org/b/id/10995476-L.jpg" alt="Cover of The Hynek UFO Report by J. Allen Hynek" loading="lazy">
+  <p class="vc-book-title">The Hynek UFO Report</p>
+  <p class="vc-book-author">J. Allen Hynek, 1977</p>
 </div>
 
 <div class="vc-book-card">
-  <div class="vc-book-cover">
-    <span class="vc-book-cover-title">UFOs and the National Security State: 1941–1973</span>
-    <span class="vc-book-cover-year">2002</span>
-  </div>
-  <p class="vc-book-author">Richard M. Dolan</p>
+  <img class="vc-book-cover" src="https://covers.openlibrary.org/b/id/820708-L.jpg" alt="Cover of UFOs and the National Security State by Richard M. Dolan" loading="lazy">
+  <p class="vc-book-title">UFOs and the National Security State: 1941–1973</p>
+  <p class="vc-book-author">Richard M. Dolan, 2002</p>
 </div>
 
 <div class="vc-book-card">
-  <div class="vc-book-cover">
-    <span class="vc-book-cover-title">UFOs and the National Security State: 1973–1991</span>
-    <span class="vc-book-cover-year">2009</span>
-  </div>
-  <p class="vc-book-author">Richard M. Dolan</p>
+  <img class="vc-book-cover" src="https://covers.openlibrary.org/b/id/820708-L.jpg" alt="Cover of UFOs and the National Security State by Richard M. Dolan" loading="lazy">
+  <p class="vc-book-title">UFOs and the National Security State: 1973–1991</p>
+  <p class="vc-book-author">Richard M. Dolan, 2009</p>
 </div>
 
 <div class="vc-book-card">
-  <div class="vc-book-cover">
-    <span class="vc-book-cover-title">Sky People</span>
-    <span class="vc-book-cover-year">2014</span>
-  </div>
-  <p class="vc-book-author">Ardy Sixkiller Clarke</p>
+  <img class="vc-book-cover" src="https://covers.openlibrary.org/b/id/13568855-L.jpg" alt="Cover of Sky People by Ardy Sixkiller Clarke" loading="lazy">
+  <p class="vc-book-title">Sky People</p>
+  <p class="vc-book-author">Ardy Sixkiller Clarke, 2014</p>
 </div>
 
 <div class="vc-book-card">
-  <div class="vc-book-cover">
-    <span class="vc-book-cover-title">American Cosmic</span>
-    <span class="vc-book-cover-year">2019</span>
-  </div>
-  <p class="vc-book-author">Diana Walsh Pasulka</p>
+  <img class="vc-book-cover" src="https://covers.openlibrary.org/b/id/11984823-L.jpg" alt="Cover of American Cosmic by Diana Walsh Pasulka" loading="lazy">
+  <p class="vc-book-title">American Cosmic</p>
+  <p class="vc-book-author">Diana Walsh Pasulka, 2019</p>
 </div>
 
 </div>
