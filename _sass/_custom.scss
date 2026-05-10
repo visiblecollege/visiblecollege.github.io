@@ -63,9 +63,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .nav-link {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1.02rem;
   font-weight: 500;
   letter-spacing: 0.01em;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .navbar .nav-link:hover,
@@ -81,10 +83,9 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   overflow: hidden;
   padding: 56px 32px;
-  // Break out of Bootstrap container
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+  // Match content container width (was full-bleed; now aligned with sections below)
   margin-top: -1rem;
+  border-radius: 4px;
   text-align: center;
 }
 
