@@ -2,21 +2,14 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.logo %}
-            <img src="{{ site.logo | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }}" class="logo-img light-mode-logo" style="height: 35px; max-width: 200px;">
-          {% endif %}
-          {% if site.logo_dark %}
-            <img src="{{ site.logo_dark | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }} (Dark Mode)" class="logo-img dark-mode-logo" style="height: 35px; max-width: 200px; display: none;">
-          {% endif %}
-        </a>
-      {% else %}
-        <!-- Homepage: No logo in header -->
-      {% elsif site.enable_navbar_social %}
-        <!-- Social Icons -->
-        <div class="navbar-brand social">{% include social.liquid %}</div>
-      {% endif %}
+      <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+        {% if site.logo %}
+          <img src="{{ site.logo | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }}" class="logo-img light-mode-logo" style="height: 35px; max-width: 200px;">
+        {% endif %}
+        {% if site.logo_dark %}
+          <img src="{{ site.logo_dark | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name | default: site.title }} (Dark Mode)" class="logo-img dark-mode-logo" style="height: 35px; max-width: 200px; display: none;">
+        {% endif %}
+      </a>
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed ml-auto"
