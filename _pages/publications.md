@@ -107,6 +107,18 @@ The following books provide essential context for the historical, scientific, an
 </div>
 
 <div class="vc-book-card">
+  <img class="vc-book-cover" src="https://covers.openlibrary.org/b/id/207639-L.jpg" alt="Cover of Dimensions: A Casebook of Alien Contact by Jacques Vallée" loading="lazy">
+  <p class="vc-book-title">Dimensions: A Casebook of Alien Contact</p>
+  <p class="vc-book-author">Jacques Vallée, 1988</p>
+</div>
+
+<div class="vc-book-card">
+  <img class="vc-book-cover" src="https://covers.openlibrary.org/b/id/208300-L.jpg" alt="Cover of Abduction: Human Encounters with Aliens by John E. Mack" loading="lazy">
+  <p class="vc-book-title">Abduction: Human Encounters with Aliens</p>
+  <p class="vc-book-author">John E. Mack, 1994</p>
+</div>
+
+<div class="vc-book-card">
   <img class="vc-book-cover" src="https://covers.openlibrary.org/b/id/820708-L.jpg" alt="Cover of UFOs and the National Security State by Richard M. Dolan" loading="lazy">
   <p class="vc-book-title">UFOs and the National Security State: 1941–1973</p>
   <p class="vc-book-author">Richard M. Dolan, 2002</p>
@@ -119,6 +131,12 @@ The following books provide essential context for the historical, scientific, an
 </div>
 
 <div class="vc-book-card">
+  <img class="vc-book-cover" src="https://covers.openlibrary.org/b/id/8730280-L.jpg" alt="Cover of UFOs: Generals, Pilots, and Government Officials Go on the Record by Leslie Kean" loading="lazy">
+  <p class="vc-book-title">UFOs: Generals, Pilots, and Government Officials Go on the Record</p>
+  <p class="vc-book-author">Leslie Kean, 2010</p>
+</div>
+
+<div class="vc-book-card">
   <img class="vc-book-cover" src="https://covers.openlibrary.org/b/id/13568855-L.jpg" alt="Cover of Sky People by Ardy Sixkiller Clarke" loading="lazy">
   <p class="vc-book-title">Sky People</p>
   <p class="vc-book-author">Ardy Sixkiller Clarke, 2014</p>
@@ -126,8 +144,32 @@ The following books provide essential context for the historical, scientific, an
 
 <div class="vc-book-card">
   <img class="vc-book-cover" src="https://covers.openlibrary.org/b/id/11984823-L.jpg" alt="Cover of American Cosmic by Diana Walsh Pasulka" loading="lazy">
-  <p class="vc-book-title">American Cosmic</p>
+  <p class="vc-book-title">American Cosmic: UFOs, Religion, Technology</p>
   <p class="vc-book-author">Diana Walsh Pasulka, 2019</p>
+</div>
+
+<div class="vc-book-card">
+  <img class="vc-book-cover" src="https://covers.openlibrary.org/b/isbn/9780063000841-L.jpg" alt="Cover of In Plain Sight by Ross Coulthart" loading="lazy">
+  <p class="vc-book-title">In Plain Sight: An Investigation into UFOs and Impossible Science</p>
+  <p class="vc-book-author">Ross Coulthart, 2021</p>
+</div>
+
+<div class="vc-book-card">
+  <img class="vc-book-cover" src="https://covers.openlibrary.org/b/id/10618729-L.jpg" alt="Cover of Extraterrestrial by Avi Loeb" loading="lazy">
+  <p class="vc-book-title">Extraterrestrial: The First Sign of Intelligent Life Beyond Earth</p>
+  <p class="vc-book-author">Avi Loeb, 2021</p>
+</div>
+
+<div class="vc-book-card">
+  <img class="vc-book-cover" src="https://covers.openlibrary.org/b/id/14558809-L.jpg" alt="Cover of Encounters: Experiences with Nonhuman Intelligences by D.W. Pasulka" loading="lazy">
+  <p class="vc-book-title">Encounters: Experiences with Nonhuman Intelligences</p>
+  <p class="vc-book-author">D.W. Pasulka, 2023</p>
+</div>
+
+<div class="vc-book-card">
+  <img class="vc-book-cover" src="{{ '/assets/img/HowToThinkImpossibly.jpeg' | relative_url }}" alt="Cover of How to Think Impossibly by Jeffrey J. Kripal" loading="lazy">
+  <p class="vc-book-title">How to Think Impossibly: About Souls, UFOs, Time, Belief, and Everything Else</p>
+  <p class="vc-book-author">Jeffrey J. Kripal, 2024</p>
 </div>
 
 </div>
