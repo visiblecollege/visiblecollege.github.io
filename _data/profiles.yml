@@ -2,6 +2,17 @@ groups:
   - label: Research Associates
     summary: Academics and professionals who are working or have worked on research projects or other initiatives of The Visible College.
     members:
+      - name: Steven Brown, Ph.D.
+        id: stevenbrown
+        title: Associate Professor of Teaching Philosophy, The Ohio State University
+        image: stevenbrown.jpg
+        bio: people/bio/stevenbrown.md
+        profile_page: /stevenbrown
+      - name: Sioux Oliva, Ph.D.
+        id: siouxoliva
+        title: Historian and Author
+        image: siouxoliva.jpeg
+        bio: people/bio/siouxoliva.md
       - name: Janis Whitlock, Ph.D., M.P.H.
         id: janiswhitlock
         title: Research Scientist Emerita
@@ -12,12 +23,6 @@ groups:
         title: Ph.D. in Tibetan Buddhism
         image: jedverity.jpg
         bio: people/bio/jedverity.md
-      - name: Steven Brown, Ph.D.
-        id: stevenbrown
-        title: Associate Professor of Teaching Philosophy, The Ohio State University
-        image: stevenbrown.jpg
-        bio: people/bio/stevenbrown.md
-        profile_page: /stevenbrown
       - name: Justin Sui, Ph.D.
         id: justinsui
         image: justinsui.jpg

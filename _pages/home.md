@@ -17,7 +17,7 @@ social: true
 <div class="vc-highlight">
   <span class="vc-label">Open Letter &mdash; May 2026</span>
   <h3>A Statement from The Visible College</h3>
-  <p>The Visible College has published an open letter calling for rigorous, transparent, and interdisciplinary scientific inquiry into anomalous phenomena. We invite scholars, researchers, and the public to read and engage with our statement.</p>
+  <p>The Visible College has published an open letter calling for rigorous, transparent, and interdisciplinary inquiry &mdash; both scientific and interpretive &mdash; into anomalous phenomena.</p>
 
   <!-- PDF EMBED — replace the placeholder below with your PDF once it is ready.
        Option A (embed):  <iframe src="/assets/pdf/open-letter.pdf" width="100%" height="560" style="border:none;border-radius:3px;"></iframe>
