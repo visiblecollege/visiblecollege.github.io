@@ -8,6 +8,11 @@ groups:
         image: stevenbrown.jpg
         bio: people/bio/stevenbrown.md
         profile_page: /stevenbrown
+      - name: Rebecca Krinke
+        id: rebeccakrinke
+        title: Artist-in-Residence, The Visible College; Professor of Landscape Architecture, University of Minnesota
+        image: rebeccakrinke.jpg
+        bio: people/bio/rebeccakrinke.md
       - name: Sioux Oliva, Ph.D.
         id: siouxoliva
         title: Historian and Author
@@ -65,6 +70,31 @@ groups:
         title: Director of Technology
         image: alainahardie.jpg
         bio: people/bio/alainahardie.md
+      - name: Cosmo Corfield
+        id: cosmocorfield
+        title: Freelance Educator / Independent Researcher
+        image: cosmocorfield.jpg
+        bio: people/bio/cosmocorfield.md
+      - name: David Bertaina, Ph.D.
+        id: davidbertaina
+        title: Ordinary Professor of History, University of Illinois, Springfield
+        image: davidbertaina.jpg
+        bio: people/bio/davidbertaina.md
+      - name: Christopher Noel
+        id: christophernoel
+        title: Independent Scholar, Consciousness Studies and Sasquatch Field Researcher
+        image: christophernoel.jpg
+        bio: people/bio/christophernoel.md
+      - name: Maryam Dilmaghani, Ph.D.
+        id: maryamdilmaghani
+        title: Professor of Economics, Saint Mary's University
+        image: maryamdilmaghani.jpg
+        bio: people/bio/maryamdilmaghani.md
+      - name: Craig Whitton, M.Sc.
+        id: craigwhitton
+        title: Higher Education Administrator, MSc in Risk, Crisis, and Disaster Management
+        image: craigwhitton.jpg
+        bio: people/bio/craigwhitton.md
 
   - label: Public Figures
     summary: Scholars working publicly in UAP Studies or adjacent fields who are not directly associated with The Visible College, but whose work we consider integral to an understanding of the subject area as a whole.
