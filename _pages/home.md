@@ -19,7 +19,7 @@ social: true
   <h3>A Statement from The Visible College</h3>
   <p>The Visible College has published an open letter calling for rigorous, transparent, and interdisciplinary inquiry &mdash; both scientific and interpretive &mdash; into anomalous phenomena.</p>
 
-  <iframe src="{{ '/assets/pdf/open-letter.pdf' | relative_url }}" width="100%" height="700" style="border:none;border-radius:3px;" title="The Visible College Open Letter"></iframe>
+  <iframe src="{{ '/assets/pdf/open-letter.pdf' | relative_url }}#pagemode=none&navpanes=0&view=FitH" width="100%" height="700" style="border:none;border-radius:3px;" title="The Visible College Open Letter"></iframe>
   <p style="margin-top:0.75rem;">
     <a href="{{ '/assets/pdf/open-letter.pdf' | relative_url }}" class="vc-btn" target="_blank" rel="noopener">Open the Open Letter (PDF)</a>
   </p>
