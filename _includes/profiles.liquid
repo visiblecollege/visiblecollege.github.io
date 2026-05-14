@@ -46,6 +46,10 @@
           </div>
         </div>
       {% endfor %}
+      {% if profile_group.closing %}
+        <hr/>
+        <div class="profile-group-closing">{{ profile_group.closing | markdownify }}</div>
+      {% endif %}
     {% endfor %}
   {% endif %}
 </article>
