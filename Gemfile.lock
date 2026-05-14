@@ -230,6 +230,7 @@ DEPENDENCIES
   jekyll-toc
   jekyll-twitter-plugin
   jemoji
+  rake (~> 13.0)
   rouge (= 4.4.0)
   unicode_utils
   webrick
