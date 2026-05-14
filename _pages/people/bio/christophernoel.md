@@ -1,0 +1,1 @@
+Chris's most recent work focuses on the underappreciated resonances between the UAP/"alien" phenomenon and other manifestations of consciousness such as psychokinesis and the afterlife. He has also written numerous books on Sasquatch, most notably linking their remarkable capacities to those of autistic savants of our own species.
