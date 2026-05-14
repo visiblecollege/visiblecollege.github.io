@@ -12,11 +12,11 @@ logo_dark: visible-college-dark.png # dark mode logo image file in assets/img/
 logo_vertical: visible-college-vertical.png # vertical logo for homepage
 logo_vertical_dark: visible-college-vertical-dark.png # dark mode vertical logo for homepage
 # Trigger rebuild for theme color changes
-description:
+description: The Visible College is a volunteer group of scholars conducting and promoting rigorous, open, interdisciplinary research into anomalous phenomena.
 footer_text:
-keywords: # add your own keywords or leave empty
+keywords: visible college, UAP, anomalous phenomena, NHI, research, scholars, academic inquiry
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: vc-favicon.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 encoding: utf-8 # explicitly set the encoding
 
 url: https://visiblecollege.github.io # the base hostname & protocol for your site
@@ -65,9 +65,9 @@ max_width: 1030px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: https://visiblecollege.github.io/assets/img/vc-og.png # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
