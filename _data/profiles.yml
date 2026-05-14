@@ -90,11 +90,6 @@ groups:
         title: Associate Professor of Psychology, University of West Georgia
         image: johnlroberts.jpg
         bio: people/bio/johnlroberts.md
-      - name: Craig Whitton, M.Sc.
-        id: craigwhitton
-        title: Director of Student Affairs; Founder, Authentik Consulting & Training
-        image: craigwhitton.jpg
-        bio: people/bio/craigwhitton.md
       # - name: Nicolas Cuneen, Ph.D.
       #   id: nickcuneen
       #   title: Postdoctoral Fellow and lecturer, UCLouvain

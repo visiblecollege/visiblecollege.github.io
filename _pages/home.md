@@ -23,6 +23,13 @@ social: true
   <p style="margin-top:0.75rem;">
     <a href="{{ '/assets/pdf/open-letter.pdf' | relative_url }}" class="vc-btn" target="_blank" rel="noopener">Open the Open Letter (PDF)</a>
   </p>
+
+  <h4 style="margin-top:2rem;">Add Your Signature</h4>
+  <p>Researchers, scholars, and members of the public who support this call for rigorous, transparent inquiry are invited to add their names to the letter using the form below.</p>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSecoTuWjCROC7_RDxFZOLX_1rUr03fvmPWBYzXYRMczYTR1gQ/viewform?embedded=true" width="100%" height="1726" frameborder="0" marginheight="0" marginwidth="0" style="border:none;border-radius:3px;" title="Sign the Open Letter">Loading&hellip;</iframe>
+  <p style="margin-top:0.75rem;font-size:0.9rem;">
+    Trouble viewing the form? <a href="https://docs.google.com/forms/d/e/1FAIpQLSecoTuWjCROC7_RDxFZOLX_1rUr03fvmPWBYzXYRMczYTR1gQ/viewform" target="_blank" rel="noopener">Open it in a new tab</a>.
+  </p>
 </div>
 
 #### Our **mission**
