@@ -37,6 +37,11 @@ groups:
         id: justinsui
         image: justinsui.jpg
         bio: people/bio/justinsui.md
+      - name: Craig Whitton, M.Sc.
+        id: craigwhitton
+        title: Director of Student Affairs; Founder, Authentik Consulting & Training
+        image: craigwhitton.jpg
+        bio: people/bio/craigwhitton.md
 
   - label: Members
     summary: Scholars, researchers, and practitioners contributing to The Visible College's work across disciplines.
