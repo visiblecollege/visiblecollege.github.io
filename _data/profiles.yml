@@ -13,11 +13,6 @@ groups:
         title: Research Scientist Emerita
         image: janiswhitlock.jpg
         bio: people/bio/janiswhitlock.md
-      - name: Jed Verity, Ph.D.
-        id: jedverity
-        title: Ph.D. in Tibetan Buddhism
-        image: jedverity.jpg
-        bio: people/bio/jedverity.md
       - name: Alaina Hardie
         id: alainahardie
         title: Director of Technology

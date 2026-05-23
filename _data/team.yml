@@ -6,13 +6,6 @@
   image_circular: false # crops the image to make it circular
   profile_page: /stevenbrown
   more_info:
-- name: Jed Verity, Ph.D.
-  title: Associate Director
-  image: jedverity.jpg
-  bio: people/bio/jedverity_team.md
-  align: left
-  image_circular: false # crops the image to make it circular
-  more_info:
 - name: Janis Whitlock, Ph.D., M.P.H.
   title: Director of Research
   image: janiswhitlock.jpg
