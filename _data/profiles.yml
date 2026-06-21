@@ -47,9 +47,9 @@ groups:
         title: Associate Professor of Psychology, University of West Georgia
         image: johnlroberts.jpg
         bio: people/bio/johnlroberts.md
-      - name: Kharisma Montes de Oca, M.S.
+      - name: Kharisma Montes de Oca, M.S., J.D.
         id: kharismamontesdeoca
-        title: Juris Doctorate 2025 Candidate, Urban Planner, Policy Writer & Project Manager
+        title: Legal Researcher | Sitting for the July 2026 Bar Exam
         image: kharismamontesdeoca.jpeg
         bio: people/bio/kharismamontesdeoca.md
       - name: Christian Peters, Ph.D.
@@ -90,6 +90,16 @@ groups:
         title: Professor of Economics, Saint Mary's University
         image: maryamdilmaghani.jpg
         bio: people/bio/maryamdilmaghani.md
+      - name: Anthony Miller, M.P.P.
+        id: anthonymiller
+        title: Researcher and Communicator, Anomalous Phenomena Studies
+        image: anthonymiller.jpg
+        bio: people/bio/anthonymiller.md
+      - name: Andrea Lani, Ph.D.
+        id: andrealani
+        title: Research & Team Manager at University
+        image: andrealani.jpg
+        bio: people/bio/andrealani.md
       # - name: Nicolas Cuneen, Ph.D.
       #   id: nickcuneen
       #   title: Postdoctoral Fellow and lecturer, UCLouvain
