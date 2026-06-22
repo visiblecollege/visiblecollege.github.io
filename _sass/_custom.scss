@@ -451,3 +451,195 @@ footer.fixed-bottom a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+// ============================================================
+// PEOPLE GRID + BIO MODAL
+// ============================================================
+.vc-people .vc-group-summary {
+  color: rgba(10, 8, 57, 0.68);
+  margin: 0.4rem 0 1.5rem;
+  max-width: 60ch;
+}
+
+.vc-people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 18px;
+  margin: 0 0 1rem;
+}
+
+.vc-person-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  padding: 18px 14px 20px;
+  background: #ffffff;
+  border: 1px solid rgba(10, 8, 57, 0.08);
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.vc-person-card:hover,
+.vc-person-card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 24, 233, 0.12);
+  border-color: rgba(0, 24, 233, 0.35);
+  outline: none;
+}
+
+.vc-person-photo {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  margin-bottom: 10px;
+  background: #eeeef5;
+}
+
+.vc-person-photo--ph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Outfit', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0018e9 0%, #0a0839 100%);
+}
+
+.vc-person-name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #0a0839;
+}
+
+.vc-person-title {
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: rgba(10, 8, 57, 0.6);
+}
+
+.vc-people .profile-group-closing {
+  color: rgba(10, 8, 57, 0.6);
+  font-style: italic;
+  margin-top: 1.25rem;
+}
+
+// --- Modal ---
+.vc-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 16px;
+  background: rgba(10, 8, 57, 0.55);
+  overflow-y: auto;
+}
+
+.vc-modal-overlay[hidden] {
+  display: none;
+}
+
+.vc-modal {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 30px 34px 34px;
+  box-shadow: 0 24px 60px rgba(10, 8, 57, 0.35);
+}
+
+.vc-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 1.7rem;
+  line-height: 1;
+  color: rgba(10, 8, 57, 0.45);
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.vc-modal-close:hover {
+  color: #0018e9;
+}
+
+.vc-modal-head {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+  padding-right: 24px;
+}
+
+.vc-modal-photo {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+}
+
+.vc-modal-name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0a0839;
+  margin: 0 0 2px;
+}
+
+.vc-modal-title {
+  font-size: 0.9rem;
+  color: #0018e9;
+  margin: 0;
+}
+
+.vc-modal-bio {
+  color: rgba(10, 8, 57, 0.82);
+  line-height: 1.6;
+}
+
+.vc-modal-bio p {
+  margin-bottom: 0.9rem;
+}
+
+.vc-modal-pubs {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(10, 8, 57, 0.1);
+}
+
+.vc-modal-link {
+  font-weight: 600;
+  color: #0018e9;
+}
+
+@media (max-width: 600px) {
+  .vc-people-grid {
+    grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+    gap: 12px;
+  }
+
+  .vc-modal {
+    padding: 26px 20px 28px;
+  }
+
+  .vc-modal-head {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+}
