@@ -1,94 +1,77 @@
-<article class="profiles-include vc-people">
+<article class="profiles-include">
   {% if site.data.profiles %}
     {% for profile_group in site.data.profiles.groups %}
       {% assign group_slug = profile_group.label | downcase | replace: " ", "-" %}
-      <a name="{{ group_slug }}"><h3{% unless forloop.first %} style="margin-top: 3rem;"{% endunless %}>{{ profile_group.label }}</h3></a>
-      {% if profile_group.summary %}<p class="vc-group-summary">{{ profile_group.summary }}</p>{% endif %}
-
-      <div class="vc-people-grid">
-        {% for profile in profile_group.members %}
-          {% assign card_id = group_slug | append: '-' | append: forloop.index %}
-          {% capture bio_html %}{% if profile.bio %}{% capture profile_content %}{% include_relative {{ profile.bio }} %}{% endcapture %}{{ profile_content | markdownify }}{% endif %}{% endcapture %}
-          {% capture pubs_html %}{% bibliography --sort_by year --order descending --group_by none --query @*[author_id~=\|{{ profile.id }}\|] %}{% endcapture %}
-          <button type="button" class="vc-person-card" data-person="{{ card_id }}" aria-haspopup="dialog">
-            {% if profile.image %}
-              <img class="vc-person-photo" src="{{ profile.image | prepend: '/assets/img/' | relative_url }}" alt="{{ profile.name | escape }}" loading="lazy" />
+      <a name="{{ group_slug }}"><h3{% unless forloop.first %} style="margin-top: 3.5rem;"{% endunless %}>{{ profile_group.label }}</h3></a>
+      {{ profile_group.summary }}
+      <div class="profiles-group"{% if profile_group.label == "Members" %} data-shuffle="true"{% endif %}>
+      {% for profile in profile_group.members %}
+        <div class="profile-entry">
+        <hr/>
+        <div class="profile float-{% if profile.align == 'right' %}right{% else %}left{% endif %}">
+          {% if profile.image %}
+            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+            {% if profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
             {% else %}
-              <span class="vc-person-photo vc-person-photo--ph">{{ profile.name | strip | slice: 0, 1 }}</span>
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
             {% endif %}
-            <span class="vc-person-name">{{ profile.name }}</span>
-            {% if profile.title %}<span class="vc-person-title">{{ profile.title }}</span>{% endif %}
-          </button>
-          <template id="tpl-{{ card_id }}">
-            <div class="vc-modal-head">
-              {% if profile.image %}<img class="vc-modal-photo" src="{{ profile.image | prepend: '/assets/img/' | relative_url }}" alt="{{ profile.name | escape }}" />{% endif %}
-              <div class="vc-modal-headtext">
-                <h3 class="vc-modal-name">{{ profile.name }}</h3>
-                {% if profile.title %}<p class="vc-modal-title">{{ profile.title }}</p>{% endif %}
-              </div>
-            </div>
-            <div class="vc-modal-bio">
-              {{ bio_html }}
-              {% if pubs_html contains "bibliography" %}<div class="vc-modal-pubs">{{ pubs_html }}</div>{% endif %}
-              {% if profile.profile_page %}<p><a class="vc-modal-link" href="{{ profile.profile_page | relative_url }}">Full profile &rarr;</a></p>{% endif %}
-            </div>
-          </template>
-        {% endfor %}
-      </div>
+            {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+          {% endif %}
+          {% if profile.more_info %}
+            <div class="more-info">{{ profile.more_info }}</div>
+          {% endif %}
+        </div>
 
+        <div class="clearfix">
+          <h5 style="margin-bottom: 0.1rem">
+            <strong>
+              {% if profile.profile_page %}
+                <a href="{{ profile.profile_page | relative_url }}">{{ profile.name }}</a>
+              {% else %}
+                {{ profile.name }}
+              {% endif %}
+            </strong>
+          </h5>
+          {% if profile.title %}
+            <h6>{{ profile.title }}</h6>
+          {% endif  %}
+          {% if profile.bio %}
+            {% capture profile_content %}{% include_relative {{ profile.bio }} %}{% endcapture %}
+            {{ profile_content | markdownify }}
+          {% endif %}
+          <div class="publications-container">
+            <div class="publications float-left">
+              {% bibliography --sort_by year --order descending --group_by none --query @*[author_id~=\|{{ profile.id }}\|] %}
+            </div>
+          </div>
+        </div>
+        </div>
+      {% endfor %}
+      </div>
       {% if profile_group.closing %}
-        <p class="profile-group-closing">{{ profile_group.closing | markdownify }}</p>
+        <hr/>
+        <div class="profile-group-closing">{{ profile_group.closing | markdownify }}</div>
       {% endif %}
     {% endfor %}
   {% endif %}
 </article>
 
-<div class="vc-modal-overlay" id="vc-modal" hidden>
-  <div class="vc-modal" role="dialog" aria-modal="true">
-    <button type="button" class="vc-modal-close" aria-label="Close">&times;</button>
-    <div class="vc-modal-content" id="vc-modal-content"></div>
-  </div>
-</div>
-
 <script>
   (function () {
-    var overlay = document.getElementById("vc-modal");
-    if (!overlay) return;
-    var content = document.getElementById("vc-modal-content");
-    var dialog = overlay.querySelector(".vc-modal");
-    var closeBtn = overlay.querySelector(".vc-modal-close");
-    var lastFocus = null;
-
-    function openModal(id) {
-      var tpl = document.getElementById("tpl-" + id);
-      if (!tpl) return;
-      content.innerHTML = "";
-      content.appendChild(tpl.content.cloneNode(true));
-      var nameEl = content.querySelector(".vc-modal-name");
-      if (nameEl) dialog.setAttribute("aria-label", nameEl.textContent);
-      overlay.hidden = false;
-      document.body.style.overflow = "hidden";
-      closeBtn.focus();
-    }
-    function closeModal() {
-      overlay.hidden = true;
-      content.innerHTML = "";
-      document.body.style.overflow = "";
-      if (lastFocus) lastFocus.focus();
-    }
-
-    document.querySelectorAll(".vc-person-card").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        lastFocus = btn;
-        openModal(btn.getAttribute("data-person"));
+    function shuffle(container) {
+      var items = Array.prototype.slice.call(container.querySelectorAll(":scope > .profile-entry"));
+      for (var i = items.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var tmp = items[i];
+        items[i] = items[j];
+        items[j] = tmp;
+      }
+      items.forEach(function (el) {
+        container.appendChild(el);
       });
-    });
-    closeBtn.addEventListener("click", closeModal);
-    overlay.addEventListener("click", function (e) {
-      if (e.target === overlay) closeModal();
-    });
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && !overlay.hidden) closeModal();
-    });
+    }
+    document.querySelectorAll('.profiles-group[data-shuffle="true"]').forEach(shuffle);
   })();
 </script>
