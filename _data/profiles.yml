@@ -42,34 +42,49 @@ groups:
     summary: Scholars, researchers, and practitioners contributing to The Visible College's work across disciplines.
     closing: _And many others who are navigating their own visibility on this important topic._
     members:
-      - name: John L. Roberts, Ph.D.
-        id: johnlroberts
-        title: Associate Professor of Psychology, University of West Georgia
-        image: johnlroberts.jpg
-        bio: people/bio/johnlroberts.md
+      - name: Andrea Lani, Ph.D.
+        id: andrealani
+        title: Research & Team Manager at University
+        image: andrealani.jpg
+        bio: people/bio/andrealani.md
+      - name: Claire Kucera, M.S.
+        id: clairekucera
+        title: Educator & Curriculum Designer
+        image: clairekucera.jpg
+        bio: people/bio/clairekucera.md
+      - name: Anthony Miller, M.P.P.
+        id: anthonymiller
+        title: Researcher and Communicator, Anomalous Phenomena Studies
+        image: anthonymiller.jpg
+        bio: people/bio/anthonymiller.md
       - name: Kharisma Montes de Oca, M.S., J.D.
         id: kharismamontesdeoca
         title: Legal Researcher | Sitting for the July 2026 Bar Exam
         image: kharismamontesdeoca.jpeg
         bio: people/bio/kharismamontesdeoca.md
+      - name: Brannon Wheeler, Ph.D.
+        id: brannonwheeler
+        image: brannonwheeler.jpg
+        bio: people/bio/brannonwheeler.md
+      - name: Maryam Dilmaghani, Ph.D.
+        id: maryamdilmaghani
+        title: Professor of Economics, Saint Mary's University
+        image: maryamdilmaghani.jpg
+        bio: people/bio/maryamdilmaghani.md
       - name: Christian Peters, Ph.D.
         id: christianpeters
         title: Managing Director, Bremen International Graduate School of Social Sciences (BIGSSS), University of Bremen
         image: christianpeters.jpeg
         bio: people/bio/christianpeters.md
-      - name: Mike Senter-Zapata, M.D.
-        id: mikesenterzapata
-        title: Instructor of Medicine, Harvard Medical School
-        image: mikesenterzapata.jpg
-        bio: people/bio/mikesenterzapata.md
       - name: Tania Searle, Ph.D.
         id: taniasearle
         image: taniasearle.jpg
         bio: people/bio/taniasearle.md
-      - name: Brannon Wheeler, Ph.D.
-        id: brannonwheeler
-        image: brannonwheeler.jpg
-        bio: people/bio/brannonwheeler.md
+      - name: Christopher Noel
+        id: christophernoel
+        title: Independent Scholar, Consciousness Studies and Sasquatch Field Researcher
+        image: christophernoel.jpg
+        bio: people/bio/christophernoel.md
       - name: Cosmo Corfield
         id: cosmocorfield
         title: Freelance Educator / Independent Researcher
@@ -80,26 +95,36 @@ groups:
         title: Ordinary Professor of History, University of Illinois, Springfield
         image: davidbertaina.jpg
         bio: people/bio/davidbertaina.md
-      - name: Christopher Noel
-        id: christophernoel
-        title: Independent Scholar, Consciousness Studies and Sasquatch Field Researcher
-        image: christophernoel.jpg
-        bio: people/bio/christophernoel.md
-      - name: Maryam Dilmaghani, Ph.D.
-        id: maryamdilmaghani
-        title: Professor of Economics, Saint Mary's University
-        image: maryamdilmaghani.jpg
-        bio: people/bio/maryamdilmaghani.md
-      - name: Anthony Miller, M.P.P.
-        id: anthonymiller
-        title: Researcher and Communicator, Anomalous Phenomena Studies
-        image: anthonymiller.jpg
-        bio: people/bio/anthonymiller.md
-      - name: Andrea Lani, Ph.D.
-        id: andrealani
-        title: Research & Team Manager at University
-        image: andrealani.jpg
-        bio: people/bio/andrealani.md
+      - name: David Dominguez Hooper, B.S.
+        id: davidhooper
+        title: Founder & Principal Engineer, ELDÆON
+        image: davidhooper.jpg
+        bio: people/bio/davidhooper.md
+      - name: Jeremy C. Fransen, Ph.D.
+        id: jeremyfransen
+        title: Assistant Teaching Professor, Arizona State University
+        image: jeremyfransen.jpg
+        bio: people/bio/jeremyfransen.md
+      - name: John L. Roberts, Ph.D.
+        id: johnlroberts
+        title: Associate Professor of Psychology, University of West Georgia
+        image: johnlroberts.jpg
+        bio: people/bio/johnlroberts.md
+      - name: Keith Taylor, Ed.D.
+        id: keithtaylor
+        title: Adjunct Assistant Professor of Criminal Justice, John Jay College
+        image: keithtaylor.jpg
+        bio: people/bio/keithtaylor.md
+      - name: Mike Senter-Zapata, M.D.
+        id: mikesenterzapata
+        title: Instructor of Medicine, Harvard Medical School
+        image: mikesenterzapata.jpg
+        bio: people/bio/mikesenterzapata.md
+      - name: Robert W. "Science Bob" McGwier, Ph.D.
+        id: robertmcgwier
+        title: Mathematician, Data Scientist & Entrepreneur
+        image: robertmcgwier.jpg
+        bio: people/bio/robertmcgwier.md
       # - name: Nicolas Cuneen, Ph.D.
       #   id: nickcuneen
       #   title: Postdoctoral Fellow and lecturer, UCLouvain

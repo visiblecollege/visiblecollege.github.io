@@ -1,0 +1,7 @@
+David Dominguez Hooper is an engineer and researcher whose work centers on the systematic detection and characterization of Unidentified Anomalous Phenomena (UAP). He holds a bachelor's degree in Electrical Engineering and Computer Science from the University of California, Berkeley, where he also founded a UAV research organization focused on embedded systems, robotics, and aerial sensing.
+
+Professionally, David has contributed to autonomous drone control systems at Fat Shark, and worked as an FPGA firmware engineer at Velodyne LiDAR, helping develop advanced LiDAR platforms for autonomous and perception-driven systems. Alongside his engineering career, he has managed residential construction projects as a real estate investor and developer.
+
+As founder of ELDÆON, David leads the design and deployment of field-ready, multimodal sensor platforms for UAP research. His systems integrate passive radar, IR/UV imaging, magnetometry, biometrics, disciplined timing via compact atomic clocks, and edge-computing architectures to enable real-time anomaly detection and characterization in diverse environments.
+
+His research interests include passive radar methodologies for non-cooperative targets, phenomenology of transient atmospheric or spatial anomalies, detection of time/space distortions, sensor fusion frameworks for rare-event capture, and generation of rigorous UAP datasets to support interdisciplinary scientific inquiry.
