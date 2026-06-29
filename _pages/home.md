@@ -14,6 +14,10 @@ selected_papers: false
 social: true
 ---
 
+<div style="text-align:center;margin:1.5rem 0 2rem;">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdStCevCWXU8VLNTBdGaOaW2d80la9fd7y5tE61sA17WHJtIQ/viewform?usp=header" class="vc-btn" target="_blank" rel="noopener">Apply for Membership</a>
+</div>
+
 <div class="vc-highlight">
   <span class="vc-label">Open Letter &mdash; May 2026</span>
   <h3>A Statement from The Visible College</h3>
