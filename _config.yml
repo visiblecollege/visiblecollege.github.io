@@ -253,6 +253,51 @@ exclude:
   - vendor
   - "**/*.bak"
   - "**/*.original"
+  # --- member profiles: TEMPORARILY WITHHELD (Oct 2026) ---
+  # Keeps member bio files and headshots off the live site (they are otherwise
+  # reachable by direct URL). Delete this block to restore, along with
+  # "hidden: true" on the Members group in _data/profiles.yml.
+  - _pages/people/bio/andrealani.md
+  - _pages/people/bio/anthonymiller.md
+  - _pages/people/bio/brannonwheeler.md
+  - _pages/people/bio/christianpeters.md
+  - _pages/people/bio/christophernoel.md
+  - _pages/people/bio/clairekucera.md
+  - _pages/people/bio/cosmocorfield.md
+  - _pages/people/bio/davidbertaina.md
+  - _pages/people/bio/davidhooper.md
+  - _pages/people/bio/jeremyfransen.md
+  - _pages/people/bio/johnlroberts.md
+  - _pages/people/bio/keithtaylor.md
+  - _pages/people/bio/kharismamontesdeoca.md
+  - _pages/people/bio/maryamdilmaghani.md
+  - _pages/people/bio/mikesenterzapata.md
+  - _pages/people/bio/nickcuneen.md
+  - _pages/people/bio/robertmcgwier.md
+  - _pages/people/bio/taniasearle.md
+  - assets/img/andrealani.jpg
+  - assets/img/anthonymiller.jpg
+  - assets/img/brannonwheeler.jpg
+  - assets/img/christianpeters.jpeg
+  - assets/img/christophernoel.jpg
+  - assets/img/christophernoel-source.png
+  - assets/img/clairekucera.jpg
+  - assets/img/cosmocorfield.jpg
+  - assets/img/cosmocorfield-source.jpg
+  - assets/img/davidbertaina.jpg
+  - assets/img/davidbertaina-source.jpg
+  - assets/img/davidhooper.jpg
+  - assets/img/jeremyfransen.jpg
+  - assets/img/johnlroberts.jpg
+  - assets/img/keithtaylor.jpg
+  - assets/img/kharismamontesdeoca.jpeg
+  - assets/img/maryamdilmaghani.jpg
+  - assets/img/maryamdilmaghani-source.jpg
+  - assets/img/mikesenterzapata.jpg
+  - assets/img/nickcuneen.jpg
+  - assets/img/robertmcgwier.jpg
+  - assets/img/taniasearle.jpg
+  # --- end member profiles block ---
 keep_files:
   - CNAME
   - .nojekyll

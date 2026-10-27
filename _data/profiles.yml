@@ -39,6 +39,9 @@ groups:
         bio: people/bio/craigwhitton.md
 
   - label: Members
+    # TEMPORARILY HIDDEN (Oct 2026): this whole section is withheld from the site.
+    # To restore: delete the line below AND the "member profiles" block in _config.yml's exclude list.
+    hidden: true
     summary: Scholars, researchers, and practitioners contributing to The Visible College's work across disciplines.
     closing: _And many others who are navigating their own visibility on this important topic._
     members:

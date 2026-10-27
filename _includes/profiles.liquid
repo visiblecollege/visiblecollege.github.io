@@ -1,6 +1,7 @@
 <article class="profiles-include">
   {% if site.data.profiles %}
     {% for profile_group in site.data.profiles.groups %}
+      {% if profile_group.hidden %}{% continue %}{% endif %}
       {% assign group_slug = profile_group.label | downcase | replace: " ", "-" %}
       <a name="{{ group_slug }}"><h3{% unless forloop.first %} style="margin-top: 3.5rem;"{% endunless %}>{{ profile_group.label }}</h3></a>
       {{ profile_group.summary }}
