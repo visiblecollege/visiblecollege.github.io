@@ -4,7 +4,7 @@ title: Contact
 description: Get in touch with The Visible College
 permalink: /contact
 nav: true
-nav_order: 6
+nav_order: 7
 ---
 
 For general enquiries, media requests, collaboration proposals, or to learn more about The Visible College, please reach out to us directly.
